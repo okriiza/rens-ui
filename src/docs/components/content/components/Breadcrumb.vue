@@ -1,0 +1,57 @@
+<script setup>
+defineProps({
+  icon: {
+    type: Boolean,
+    default: false
+  }
+})
+</script>
+
+<template>
+  <div class="breadcrumbs text-sm">
+    <ul>
+      <li>
+        <a>
+          <template v-if="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-2 h-4 w-4"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+              <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+              <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg
+          ></template>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <template v-if="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="mr-2 h-4 w-4 stroke-current"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+            ></path>
+          </svg>
+        </template>
+        <a>Article</a>
+      </li>
+      <li>Lorem ipsum dolor sit amet consectetur</li>
+    </ul>
+  </div>
+</template>

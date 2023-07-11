@@ -1,0 +1,87 @@
+.textarea {
+  @apply h-fit w-full max-w-xs rounded-xl border-2  border-gray-6 bg-gray-1  py-2.5 px-3 text-base text-content1 outline-none;
+}
+
+/* Colors */
+.textarea-primary {
+  @apply border-primary;
+}
+
+.textarea-secondary {
+  @apply border-secondary;
+}
+
+.textarea-success {
+  @apply border-success;
+}
+
+.textarea-warning {
+  @apply border-warning;
+}
+
+.textarea-error {
+  @apply border-error;
+}
+
+/* Ghost */
+
+.textarea-ghost-primary {
+  @apply transition-colors bg-transparent hover:border-primary focus:border-primary;
+}
+
+.textarea-ghost-secondary {
+  @apply transition-colors bg-transparent hover:border-secondary focus:border-secondary;
+}
+
+.textarea-ghost-success {
+  @apply transition-colors bg-transparent hover:border-success focus:border-success;
+}
+
+.textarea-ghost-warning {
+  @apply transition-colors bg-transparent hover:border-warning focus:border-warning;
+}
+
+.textarea-ghost-error {
+  @apply transition-colors bg-transparent hover:border-error focus:border-error;
+}
+
+/* Size */
+
+/* Extra */
+.textarea::placeholder {
+  @apply text-content3;
+}
+
+.textarea:disabled {
+  @apply opacity-50 pointer-events-none select-none;
+}
+
+.textarea-block {
+  @apply max-w-full;
+}
+
+/* Solid */
+
+.textarea-solid {
+  @apply border-transparent bg-gray-4 text-gray-11 placeholder:text-gray-10;
+}
+
+.textarea-solid-primary {
+  @apply border-transparent bg-blue-4 text-blue-11 placeholder:text-blue-9;
+}
+
+.textarea-solid-secondary {
+  @apply border-transparent bg-purple-4 text-purple-11 placeholder:text-purple-9;
+}
+
+.textarea-solid-success {
+  @apply border-transparent bg-green-4 text-green-11 placeholder:text-green-9;
+}
+
+.textarea-solid-warning {
+  @apply border-transparent bg-yellow-4 text-yellow-11 placeholder:text-yellow-11;
+}
+
+.textarea-solid-error {
+  @apply border-transparent bg-red-4 text-red-11 placeholder:text-red-9;
+}
