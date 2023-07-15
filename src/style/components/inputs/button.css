@@ -38,26 +38,26 @@
 
 /* Outline colors */
 .btn-outline {
-  @apply border-2 border-gray-6 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-gray-4 hover:bg-gray-4 focus-visible:outline-gray-7;
+  @apply border border-gray-6 bg-transparent text-whiteInverted transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:border-gray-4 hover:bg-gray-4 focus-visible:outline-gray-7;
 }
 .btn-outline-primary {
-  @apply border-2 border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary hover:text-white  focus-visible:outline-primary;
+  @apply border border-primary bg-transparent text-primary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-primary hover:text-white  focus-visible:outline-primary;
 }
 
 .btn-outline-secondary {
-  @apply border-2 border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white focus-visible:outline-secondary;
+  @apply border border-secondary bg-transparent text-secondary transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-secondary hover:text-white focus-visible:outline-secondary;
 }
 
 .btn-outline-success {
-  @apply border-2 border-success bg-transparent  text-success  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white focus-visible:outline-success;
+  @apply border border-success bg-transparent  text-success  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-success hover:text-white focus-visible:outline-success;
 }
 
 .btn-outline-error {
-  @apply border-2 border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white focus-visible:outline-error;
+  @apply border border-error bg-transparent text-error transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-error hover:text-white focus-visible:outline-error;
 }
 
 .btn-outline-warning {
-  @apply border-2 border-warning bg-transparent  text-warning  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white focus-visible:outline-warning;
+  @apply border border-warning bg-transparent  text-warning  transition-[transform,color,background-color,border-color,text-decoration-color,fill,stroke] hover:bg-warning hover:text-white focus-visible:outline-warning;
 }
 
 /* Button Sizes */
@@ -114,21 +114,21 @@
 }
 
 .btn-solid-primary {
-  @apply bg-blue-4 text-blue-11 hover:bg-blue-5 focus-visible:outline-blue-6 active:bg-blue-6;
+  @apply bg-blue-5 text-blue-11 hover:bg-blue-6 focus-visible:outline-blue-7 active:bg-blue-7;
 }
 
 .btn-solid-secondary {
-  @apply bg-purple-4 text-purple-11 hover:bg-purple-5 focus-visible:outline-purple-6 active:bg-purple-6;
+  @apply bg-pink-5 text-pink-11 hover:bg-pink-6 focus-visible:outline-pink-7 active:bg-pink-7;
 }
 
 .btn-solid-success {
-  @apply bg-green-4 text-green-11 hover:bg-green-5 focus-visible:outline-green-6 active:bg-green-6;
+  @apply bg-green-5 text-green-11 hover:bg-green-6 focus-visible:outline-green-7 active:bg-green-7;
 }
 
 .btn-solid-error {
-  @apply bg-red-4 text-red-11 hover:bg-red-5 focus-visible:outline-red-6 active:bg-red-6;
+  @apply bg-red-5 text-red-11 hover:bg-red-6 focus-visible:outline-red-7 active:bg-red-7;
 }
 
 .btn-solid-warning {
-  @apply bg-yellow-4 text-yellow-11 hover:bg-yellow-5 focus-visible:outline-yellow-6 active:bg-yellow-6;
+  @apply bg-yellow-5 text-yellow-11 hover:bg-yellow-6 focus-visible:outline-yellow-7 active:bg-yellow-7;
 }

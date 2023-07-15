@@ -8,7 +8,7 @@
 
 /* Horizontal */
 .btn-group > *:first-child {
-  @apply rounded-none rounded-l-xl;
+  @apply rounded-none rounded-l-lg;
 }
 
 .btn-group > .btn:not(.btn-active) {
@@ -16,7 +16,7 @@
 }
 
 .btn-group > *:last-child {
-  @apply rounded-none rounded-r-xl;
+  @apply rounded-none rounded-r-lg;
 }
 
 .btn-group > *:not(:first-child):not(:last-child) {
@@ -24,7 +24,7 @@
 }
 
 .btn-group > *:only-child {
-  @apply rounded-xl;
+  @apply rounded-lg;
 }
 
 .btn-group-horizontal {
@@ -32,11 +32,11 @@
 }
 
 .btn-group-horizontal > *:first-child {
-  @apply rounded-none rounded-l-xl;
+  @apply rounded-none rounded-l-lg;
 }
 
 .btn-group-horizontal > *:last-child {
-  @apply rounded-none rounded-r-xl;
+  @apply rounded-none rounded-r-lg;
 }
 
 .btn-group-horizontal > *:not(:first-child):not(:last-child) {
@@ -44,7 +44,7 @@
 }
 
 .btn-group-horizontal > *:only-child {
-  @apply rounded-xl;
+  @apply rounded-lg;
 }
 
 /* Vertical */
@@ -54,11 +54,11 @@
 }
 
 .btn-group-vertical > *:first-child {
-  @apply rounded-none rounded-t-xl;
+  @apply rounded-none rounded-t-lg;
 }
 
 .btn-group-vertical > *:last-child {
-  @apply rounded-none rounded-b-xl;
+  @apply rounded-none rounded-b-lg;
 }
 
 .btn-group-vertical > *:not(:first-child):not(:last-child) {
@@ -66,21 +66,21 @@
 }
 
 .btn-group-vertical > *:only-child {
-  @apply rounded-xl;
+  @apply rounded-lg;
 }
 
 /* Radio Type */
 
-.btn-group > input[type="radio"] {
+.btn-group > input[type='radio'] {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.btn-group > input[type="radio"]::after {
+.btn-group > input[type='radio']::after {
   @apply content-[attr(data-content)];
 }
 
-.btn-group > input[type="radio"]:checked.btn,
+.btn-group > input[type='radio']:checked.btn,
 .btn-group > .btn-active {
   @apply bg-gray-5;
 }
