@@ -37,6 +37,7 @@ const copy = (_e: MouseEvent) => {
 
 <template>
   <button
+    class="btn-copy"
     ref="copyButtonRef"
     :class="[(show || state === 'copied') && 'show']"
     @click="copy"
@@ -52,7 +53,7 @@ const copy = (_e: MouseEvent) => {
 </template>
 
 <style>
-button {
+.btn-copy {
   padding: 4px;
   margin: 4px;
   border-radius: 3px;
@@ -62,40 +63,40 @@ button {
   background-color: #27272a;
 }
 
-button:hover {
+.btn-copy:hover {
   background-color: #424244;
 }
 
-button:focus {
+.btn-copy:focus {
   opacity: 1;
   outline: none;
   box-shadow: 0 0 0 2px #1a62ff;
 }
 
-button.show {
+.btn-copy.show {
   transform: scale(1);
   opacity: 1;
 }
 
-button .icon-wrapper {
+.btn-copy .icon-wrapper {
   display: block;
   position: relative;
   width: 18px;
   height: 18px;
 }
 
-button .icon {
+.btn-copy .icon {
   display: block;
   position: absolute;
 }
 
-button .fade-enter-active,
-button .fade-leave-active {
+.btn-copy .fade-enter-active,
+.btn-copy .fade-leave-active {
   transition: opacity 200ms;
 }
 
-button .fade-enter-from,
-button .fade-leave-to {
+.btn-copy .fade-enter-from,
+.btn-copy .fade-leave-to {
   opacity: 0;
 }
 </style>

@@ -55,7 +55,7 @@
 }
 
 .badge-flat-secondary {
-  @apply text-purple-11 bg-purple-4 border-none;
+  @apply text-pink-11 bg-pink-4 border-none;
 }
 
 .badge-flat-success {

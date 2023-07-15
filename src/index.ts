@@ -1,55 +1,55 @@
-import { addPrefix } from "./utils/prefix";
-import { isValid } from "./utils/isEmpty";
-import { lightTheme } from "./theme/ligh-theme";
-import { varTheme } from "./theme/var-theme";
-import { darkTheme } from "./theme/dark-theme";
-import plugin from "tailwindcss/plugin";
-import fs from "fs";
-import postcss from "postcss";
-import postcssJs from "postcss-js";
-import path from "path";
-import { defaultSchema } from "./colors/default-schema";
-import { palleteToRGB } from "./utils/hexToRGB";
-import { Config } from "./types/config.types";
-import { Theme } from "./types/theme.types";
-import { extractNewVariables } from "./utils/extractNewVariables";
-import { createTheme, removeThemes } from "./utils/theme";
-import { mergeNestedObjects } from "./utils/theme";
-import { getSelectorsWithPrefix } from "./prefix/prefix";
-import { sortThemes } from "./utils/sortThemes";
+import { addPrefix } from './utils/prefix'
+import { isValid } from './utils/isEmpty'
+import { lightTheme } from './theme/ligh-theme'
+import { varTheme } from './theme/var-theme'
+import { darkTheme } from './theme/dark-theme'
+import plugin from 'tailwindcss/plugin'
+import fs from 'fs'
+import postcss from 'postcss'
+import postcssJs from 'postcss-js'
+import path from 'path'
+import { defaultSchema } from './colors/default-schema'
+import { palleteToRGB } from './utils/hexToRGB'
+import { Config } from './types/config.types'
+import { Theme } from './types/theme.types'
+import { extractNewVariables } from './utils/extractNewVariables'
+import { createTheme, removeThemes } from './utils/theme'
+import { mergeNestedObjects } from './utils/theme'
+import { getSelectorsWithPrefix } from './prefix/prefix'
+import { sortThemes } from './utils/sortThemes'
 
-const basePath = path.resolve(__dirname, "..", "css");
-const baseCSSPath = path.join(basePath, "base.css");
-const componentsCSSPath = path.join(basePath, "components.css");
-const utilitiesCSSPath = path.join(basePath, "utilities.css");
-const baseCSS = fs.readFileSync(baseCSSPath, "utf-8");
-const componentsCSS = fs.readFileSync(componentsCSSPath, "utf-8");
-const utilitiesCSS = fs.readFileSync(utilitiesCSSPath, "utf-8");
+const basePath = path.resolve(__dirname, '..', 'css')
+const baseCSSPath = path.join(basePath, 'base.css')
+const componentsCSSPath = path.join(basePath, 'components.css')
+const utilitiesCSSPath = path.join(basePath, 'utilities.css')
+const baseCSS = fs.readFileSync(baseCSSPath, 'utf-8')
+const componentsCSS = fs.readFileSync(componentsCSSPath, 'utf-8')
+const utilitiesCSS = fs.readFileSync(utilitiesCSSPath, 'utf-8')
 
 const config = plugin.withOptions(
   (options) =>
     ({ addBase, addComponents, addUtilities, theme, config }) => {
-      const base = postcss.parse(baseCSS);
-      const components = postcss.parse(componentsCSS);
-      const utilities = postcss.parse(utilitiesCSS);
-      const baseObj = postcssJs.objectify(base);
-      const componentsObj = postcssJs.objectify(components);
-      const utilitiesObj = postcssJs.objectify(utilities);
+      const base = postcss.parse(baseCSS)
+      const components = postcss.parse(componentsCSS)
+      const utilities = postcss.parse(utilitiesCSS)
+      const baseObj = postcssJs.objectify(base)
+      const componentsObj = postcssJs.objectify(components)
+      const utilitiesObj = postcssJs.objectify(utilities)
 
-      const configValue: Config = config("rensui") || { ...options } || {};
+      const configValue: Config = config('rensui') || { ...options } || {}
 
       const lightThemeExists = configValue.themes?.find(
-        (theme) => theme.themeName === "light"
-      );
+        (theme) => theme.themeName === 'light'
+      )
 
       const darkThemeExists = configValue.themes?.find(
-        (theme) => theme.themeName === "dark"
-      );
+        (theme) => theme.themeName === 'dark'
+      )
 
       const restThemes =
         configValue.themes?.filter(
-          (theme) => theme.themeName !== "light" && theme.themeName !== "dark"
-        ) || [];
+          (theme) => theme.themeName !== 'light' && theme.themeName !== 'dark'
+        ) || []
 
       let configTheme: Config = {
         defaultStyle: configValue.defaultStyle ?? true,
@@ -57,110 +57,110 @@ const config = plugin.withOptions(
         prefix: configValue.prefix,
         themes: [
           {
-            themeName: "light",
-            colorScheme: "light",
-            ...lightThemeExists,
+            themeName: 'light',
+            colorScheme: 'light',
+            ...lightThemeExists
           },
           {
-            themeName: "dark",
-            colorScheme: "dark",
-            ...darkThemeExists,
+            themeName: 'dark',
+            colorScheme: 'dark',
+            ...darkThemeExists
           },
-          ...restThemes,
-        ],
-      };
+          ...restThemes
+        ]
+      }
       // We have a valid config
       if (isValid(configTheme)) {
         if (configTheme.defaultStyle) {
           // This will add by default bg-color and color
           addBase({
-            [":root, [data-theme]"]: {
-              ...defaultSchema,
-            },
-          });
+            [':root, [data-theme]']: {
+              ...defaultSchema
+            }
+          })
         }
-        const configThemes = configTheme.themes || [];
-        const themesToRemove = configTheme.removeThemes || [];
-        const newThemes = removeThemes(themesToRemove, configThemes);
+        const configThemes = configTheme.themes || []
+        const themesToRemove = configTheme.removeThemes || []
+        const newThemes = removeThemes(themesToRemove, configThemes)
 
         if (newThemes.length > 0) {
           const unsortedThemes = newThemes
             .map((theme) => {
-              const colorsPrefix = addPrefix({ ...theme.colors });
-              const colorsConverted = palleteToRGB(colorsPrefix);
+              const colorsPrefix = addPrefix({ ...theme.colors })
+              const colorsConverted = palleteToRGB(colorsPrefix)
               const themeUpdated = {
                 ...theme,
-                colors: colorsConverted,
-              };
-
-              let mergedTheme;
-              if (theme.themeName === "light") {
-                mergedTheme = mergeNestedObjects(lightTheme, themeUpdated);
-              } else if (theme.themeName === "dark") {
-                mergedTheme = mergeNestedObjects(darkTheme, themeUpdated);
-              } else {
-                mergedTheme = themeUpdated as Theme;
+                colors: colorsConverted
               }
-              const newTheme = createTheme(mergedTheme as Theme);
-              return newTheme;
+
+              let mergedTheme
+              if (theme.themeName === 'light') {
+                mergedTheme = mergeNestedObjects(lightTheme, themeUpdated)
+              } else if (theme.themeName === 'dark') {
+                mergedTheme = mergeNestedObjects(darkTheme, themeUpdated)
+              } else {
+                mergedTheme = themeUpdated as Theme
+              }
+              const newTheme = createTheme(mergedTheme as Theme)
+              return newTheme
             })
-            .flat();
+            .flat()
 
           // We are gonna sort by specify, 1. :root 2. @media prefers-color-scheme, 3.[data-theme]
-          const sortedThemes = sortThemes(unsortedThemes);
-          addBase(sortedThemes);
+          const sortedThemes = sortThemes(unsortedThemes)
+          addBase(sortedThemes)
         }
       }
 
-      addBase(baseObj);
+      addBase(baseObj)
       // If we receive prefix  we will apply to all the components
       if (configValue.prefix) {
         // remove all the white spaces
         const componentsPrefixed = getSelectorsWithPrefix(
           configValue.prefix,
           componentsObj
-        );
-        addComponents(componentsPrefixed);
+        )
+        addComponents(componentsPrefixed)
       } else {
-        addComponents(componentsObj);
+        addComponents(componentsObj)
       }
-      addUtilities(utilitiesObj);
+      addUtilities(utilitiesObj)
     },
 
   // @ts-ignore
   (options: Config) => {
     //
     let varThemesMerged = {
-      ...varTheme.colors,
-    };
+      ...varTheme.colors
+    }
 
     if (isValid(options)) {
-      const themes = options.themes || [];
+      const themes = options.themes || []
       // We are going to insert the new variables from the config
       themes?.forEach((theme) => {
         if (theme?.colors) {
           const newConfigVariables = extractNewVariables(
             varTheme.colors,
             theme.colors
-          );
+          )
           varThemesMerged = {
             ...varThemesMerged,
-            ...newConfigVariables,
-          };
+            ...newConfigVariables
+          }
         }
-      });
+      })
     }
 
     return {
       theme: {
         extend: {
           colors: {
-            ...varThemesMerged,
-          },
-        },
-      },
-    };
+            ...varThemesMerged
+          }
+        }
+      }
+    }
   }
-);
+)
 
-module.exports = config;
+module.exports = config

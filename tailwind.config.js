@@ -1,15 +1,15 @@
-const { safeList } = require("./dist/js/utils/safelist.js");
+const { safeList } = require('./dist/js/utils/safelist.js')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  safelist: process.env.NODE_ENV === "production" ? safeList : [],
+  safelist: process.env.NODE_ENV === 'production' ? safeList : [],
   content:
-    process.env.NODE_ENV === "production"
-      ? [{ raw: "" }]
-      : ["./components/**/*.{html,js}", "./docs/**/*.{html,js,vue}"],
-  darkMode: "class",
+    process.env.NODE_ENV === 'production'
+      ? [{ raw: '' }]
+      : ['./components/**/*.{html,js}', './docs/**/*.{html,js,vue}'],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [require("./dist/js")],
-};
+  plugins: [require('./dist/js')]
+}

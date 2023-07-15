@@ -24,6 +24,7 @@
   },
   "exclude": [
     "src/docs",
-    "dist"
+    "dist",
+    "__test__"
   ]
 }

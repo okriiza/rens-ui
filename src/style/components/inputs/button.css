@@ -2,7 +2,7 @@
 .btn {
   transition-property: color, transform, background-color, border-color;
   transition-timing-function: ease-in;
-  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-lg bg-gray-3 px-5 text-center text-sm font-medium text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-lg bg-gray-3 px-4 text-center text-sm font-semibold text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
 }
 
 .btn:where(
@@ -62,15 +62,15 @@
 
 /* Button Sizes */
 .btn-xs {
-  @apply h-[1.5rem] min-h-[1.5rem] rounded-[7px] px-2 text-xs;
+  @apply h-8 min-h-[2rem]  px-4 text-xs;
 }
 
 .btn-sm {
-  @apply h-8 min-h-[2rem]  px-3 text-sm;
+  @apply h-9 min-h-[2.25rem]  px-4 text-xs;
 }
 
 .btn-md {
-  @apply h-10 min-h-[2.5rem]  px-5 text-sm;
+  @apply h-10 min-h-[2.5rem]  px-4 text-sm;
 }
 
 .btn-lg {
@@ -78,7 +78,7 @@
 }
 
 .btn-xl {
-  @apply h-16 min-h-[4rem]  px-8 text-xl;
+  @apply h-14 min-h-[3.5rem]  px-6 text-xl;
 }
 
 .btn:disabled {

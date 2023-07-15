@@ -20,18 +20,19 @@
   "scripts": {
     "create:folders": "mkdirp  -p ./dist/css ./dist/js",
     "create:files": "touch ./dist/css/styles.css && touch ./dist/css/base.css && touch ./dist/css/components.css && touch ./dist/css/utilities.css",
-    "create:paths": "npm run create:folders && npm run create:files",
+    "create:paths": "pnpm run create:folders && pnpm run create:files",
     "js": "tsc -b",
     "js:minify": "node ./scripts/minify.js",
     "styles": "tailwindcss --postcss -i src/style/styles.css -o ./dist/css/styles.css",
     "base": "npx tailwindcss -c src/style/base/tailwind.config.js -i src/style/base/base.css -o ./dist/css/base.css",
     "components": "tailwindcss --postcss -i src/style/components.css -o ./dist/css/components.css",
     "utilities": "npx tailwindcss -c src/style/utilities/tailwind.config.js -i src/style/utilities/utilities.css -o ./dist/css/utilities.css",
-    "build": "export NODE_ENV=production  npm run clean && npm run create:paths && npm run js && npm run js:minify && npm run base -- --minify && npm run utilities -- --minify && npm run styles -- --minify &&  npm run components -- --minify ",
-    "dev": " npm run create:paths &  npm run js -- --watch &  npm run styles -- --watch",
-    "dev:all": "npm run create:paths && npm run js  --watch && npm run styles  --watch && npm run base  --watch && npm run components  --watch && npm run utilities --watch",
+    "build": "export NODE_ENV=production  pnpm run clean && pnpm run create:paths && pnpm run js && pnpm run js:minify && pnpm run base -- --minify && pnpm run utilities -- --minify && pnpm run styles -- --minify &&  pnpm run components -- --minify ",
+    "dev": " pnpm run create:paths &  pnpm run js  --watch &  pnpm run styles  --watch",
+    "dev:all": "pnpm run create:paths && pnpm run js  --watch && pnpm run styles --  --watch && pnpm run base --  --watch && pnpm run components --  --watch && pnpm run utilities -- --watch",
+    "test": "vitest __test__",
     "clean": "rimraf ./dist",
-    "npm:publish": "npm run build && git push --follow-tags origin main && npm publish"
+    "npm:publish": "pnpm run build && git push --follow-tags origin main && pnpm publish"
   },
   "repository": {
     "type": "git",
@@ -67,6 +68,7 @@
     "@types/postcss-js": "^4.0.0",
     "postcss": "^8.4.19",
     "postcss-js": "^4.0.0",
+    "postcss-selector-parser": "^6.0.13",
     "tailwindcss": "^3.3.1"
   }
 }

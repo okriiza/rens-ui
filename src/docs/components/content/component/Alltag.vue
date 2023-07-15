@@ -36,15 +36,15 @@
   </form>
 
   <h2>Images</h2>
-  <img src="image.jpg" alt="Image" />
+  <img alt="Image" />
 
   <h2>Audio/Video</h2>
   <audio controls>
-    <source src="audio.mp3" type="audio/mpeg" />
+    <source type="audio/mpeg" />
   </audio>
 
   <video controls>
-    <source src="video.mp4" type="video/mp4" />
+    <source type="video/mp4" />
   </video>
 
   <h2>Links</h2>
