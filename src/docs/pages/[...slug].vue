@@ -43,7 +43,7 @@ definePageMeta({
       </div>
       <div class="w-4/6 px-6">
         <div
-          class="prose max-w-full dark:prose-invert prose-a:no-underline prose-thead:bg-gray-3 prose-thead:px-3"
+          class="prose max-w-full dark:prose-invert prose-a:no-underline prose-thead:bg-gray-3 prose-th:px-3 prose-th:py-2 prose-td:px-3 prose-td:py-2 prose-thead:rounded-t-lg"
         >
           <ContentDoc>
             <template #not-found>
@@ -56,7 +56,7 @@ definePageMeta({
           <NuxtLink
             v-if="prev"
             :to="prev._path"
-            class="w-64 rounded-lg border border-border px-4 py-3 hover:bg-gray-2 dark:bg-slate-800 dark:hover:border-slate-600 dark:hover:bg-slate-700"
+            class="w-64 rounded-lg border border-border px-4 py-3 hover:bg-gray-2 dark:bg-slate-800 dark:hover:border-slate-600 dark:hover:bg-slate-700 shadow-lg"
           >
             <div class="text-start">
               <p class="text-[10px] capitalize text-content2">Previous</p>
@@ -66,7 +66,7 @@ definePageMeta({
           <NuxtLink
             v-if="next"
             :to="next._path"
-            class="w-64 rounded-lg border border-border px-4 py-3 hover:bg-gray-2 dark:bg-slate-800 dark:hover:border-slate-600 dark:hover:bg-slate-700"
+            class="w-64 rounded-lg border border-border px-4 py-3 hover:bg-gray-2 dark:bg-slate-800 dark:hover:border-slate-600 dark:hover:bg-slate-700 shadow-lg"
           >
             <div class="text-end">
               <p class="text-[10px] capitalize text-content2">Next</p>

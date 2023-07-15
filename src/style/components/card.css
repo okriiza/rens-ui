@@ -1,13 +1,13 @@
 .card {
-  @apply bg-gray-3 flex w-full max-w-sm flex-col gap-2 rounded-xl shadow-md;
+  @apply bg-white flex w-full max-w-sm flex-col gap-2 rounded-lg shadow-md dark:bg-slate-3 border border-border;
 }
 
 .card.card-image-cover img:first-child {
-  @apply h-auto max-w-full rounded-t-xl;
+  @apply h-auto max-w-full rounded-t-lg;
 }
 
 .card.card-image-cover img:last-child {
-  @apply h-auto max-w-full rounded-b-xl;
+  @apply h-auto max-w-full rounded-b-lg;
 }
 
 .card-header {
@@ -15,7 +15,7 @@
 }
 
 .card-body {
-  @apply flex flex-col gap-3 p-8;
+  @apply flex flex-col gap-3 p-6;
 }
 
 .card-footer {
