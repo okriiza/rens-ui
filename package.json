@@ -4,6 +4,21 @@
   "description": "Rens UI - Free Open Source Tailwind CSS Component Library With Modern UI.",
   "author": "Rendi Okriza Putra",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okriiza/rensui.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "components",
+    "ui-library",
+    "framework",
+    "postcss",
+    "modern",
+    "clean",
+    "css",
+    "ui"
+  ],
   "bugs": {
     "url": "https://github.com/okriiza/rensui/issues"
   },
@@ -28,26 +43,11 @@
     "components": "tailwindcss --postcss -i src/style/components.css -o ./dist/css/components.css",
     "utilities": "npx tailwindcss -c src/style/utilities/tailwind.config.js -i src/style/utilities/utilities.css -o ./dist/css/utilities.css",
     "build": "export NODE_ENV=production  pnpm run clean && pnpm run create:paths && pnpm run js && pnpm run js:minify && pnpm run base -- --minify && pnpm run utilities -- --minify && pnpm run styles -- --minify &&  pnpm run components -- --minify ",
-    "dev": " pnpm run create:paths &  pnpm run js  --watch &  pnpm run styles  --watch",
-    "dev:all": "pnpm run create:paths && pnpm run js  --watch && pnpm run styles --  --watch && pnpm run base --  --watch && pnpm run components --  --watch && pnpm run utilities -- --watch",
+    "dev": "cd src/docs && pnpm dev",
     "test": "vitest __test__",
     "clean": "rimraf ./dist",
     "npm:publish": "pnpm run build && git push --follow-tags origin main && pnpm publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/okriiza/rensui.git"
-  },
-  "keywords": [
-    "ui",
-    "tailwindcss",
-    "components",
-    "modern",
-    "clean",
-    "css",
-    "framework",
-    "ui-library"
-  ],
   "devDependencies": {
     "@types/node": "^20.3.2",
     "autoprefixer": "^10.4.13",
