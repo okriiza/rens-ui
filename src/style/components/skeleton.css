@@ -49,5 +49,5 @@
   animation: skeletonPulse 2s linear infinite;
   background: no-repeat;
   animation-delay: 0.5s;
-  @apply bg-gray-7 h-full  w-full;
+  @apply bg-gray-5 h-full  w-full;
 }
