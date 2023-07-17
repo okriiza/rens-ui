@@ -101,7 +101,7 @@
 
 .progress-flat-secondary::-webkit-progress-bar,
 .progress-flat-secondary.progress-indeterminate {
-  @apply bg-purple-5;
+  @apply bg-pink-5;
 }
 
 .progress-flat-success::-webkit-progress-bar,
@@ -126,7 +126,7 @@
   }
 
   .progress-flat-secondary {
-    @apply bg-purple-5;
+    @apply bg-pink-5;
   }
 
   .progress-flat-success {
