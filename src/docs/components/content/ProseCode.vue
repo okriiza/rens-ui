@@ -61,6 +61,7 @@ const hovered = ref(false)
 .prose-code pre {
   margin-top: 0;
   margin-bottom: 0;
+  max-height: 400px;
 }
 
 .prose-code.highlight-zsh :deep(code),
