@@ -4,15 +4,15 @@
 }
 
 .table > thead > tr th:first-child {
-  @apply border-gray-6 rounded-l-md border-y border-l;
+  @apply rounded-tl-lg;
 }
 
 .table > thead > tr th:last-child {
-  @apply border-gray-6 rounded-r-md border-y border-r;
+  @apply rounded-tr-lg;
 }
 
 .table > thead > tr :not(.th:first-child, .th:last-child) {
-  @apply border-gray-6  border-y;
+  @apply border-gray-6  border-b;
 }
 
 .table > thead > tr > th {
