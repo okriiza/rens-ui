@@ -168,7 +168,7 @@
 .range-flat-secondary {
   --left-track-color: rgb(var(--secondary));
   --circle-border: rgb(var(--secondary));
-  --track-color: rgb(var(--purple-5));
+  --track-color: rgb(var(--pink-5));
   @apply text-secondary;
 }
 
