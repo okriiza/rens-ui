@@ -1,0 +1,168 @@
+<script setup>
+defineProps({
+  basic: {
+    type: Boolean,
+    default: false
+  },
+  withIcon: {
+    type: Boolean,
+    default: false
+  }
+})
+</script>
+
+<template>
+  <div class="not-prose">
+    <template v-if="basic">
+      <div class="form-group">
+        <div class="form-field">
+          <label class="form-label text-error">
+            Email address
+            <span class="form-label-alt text-error">Alternative</span>
+          </label>
+
+          <input
+            placeholder="Type here"
+            type="email"
+            class="input max-w-full input-error"
+          />
+          <label class="form-label">
+            <span class="form-label-alt text-error"
+              >Please enter a valid email.</span
+            >
+            <span class="form-label-alt text-error">Alternative</span>
+          </label>
+        </div>
+        <div class="form-field">
+          <label class="form-label text-success">Email address</label>
+
+          <input
+            placeholder="Type here"
+            type="email"
+            class="input max-w-full input-success"
+          />
+          <label class="form-label">
+            <span class="form-label-alt text-success"
+              >Please enter a valid email.</span
+            >
+          </label>
+        </div>
+      </div>
+    </template>
+    <template v-else-if="withIcon">
+      <div class="form-group">
+        <div class="form-control relative w-full">
+          <input
+            type="text"
+            class="input input-lg max-w-full"
+            placeholder="Full Name"
+          />
+
+          <span class="absolute inset-y-0 right-4 inline-flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-content3"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+            </svg>
+          </span>
+        </div>
+        <div class="form-control relative w-full">
+          <input
+            type="text"
+            class="input input-lg max-w-full pl-10"
+            placeholder="Full Name"
+          />
+
+          <span class="absolute inset-y-0 left-3 inline-flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-content3"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+              <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </template>
+    <template v-else>
+      <section class="bg-gray-3 rounded-xl">
+        <div class="p-8 shadow-lg">
+          <form class="space-y-4">
+            <div class="w-full">
+              <label class="sr-only" for="name">Name</label>
+              <input
+                class="input input-solid max-w-full"
+                placeholder="Name"
+                type="text"
+                id="name"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  class="input input-solid max-w-full"
+                  placeholder="Email address"
+                  type="email"
+                  id="email"
+                />
+              </div>
+
+              <div>
+                <label class="sr-only" for="phone">Phone</label>
+                <input
+                  class="input input-solid max-w-full"
+                  placeholder="Phone Number"
+                  type="tel"
+                  id="phone"
+                />
+              </div>
+            </div>
+
+            <div class="w-full">
+              <label class="sr-only" for="message">Message</label>
+
+              <textarea
+                class="textarea textarea-solid max-w-full"
+                placeholder="Message"
+                rows="8"
+                id="message"
+              ></textarea>
+            </div>
+
+            <div class="mt-4">
+              <button
+                type="button"
+                class="rounded-lg btn btn-primary btn-block"
+              >
+                Send Enquiry
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </template>
+  </div>
+</template>
