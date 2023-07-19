@@ -1,14 +1,14 @@
 .switch {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --switch-bg: rgb(var(--gray-6));
-  --switch-border: rgb(var(--gray-6));
+  --switch-bg: rgb(var(--slate-3));
+  --switch-border: rgb(var(--gray-4));
   --switch-bg-checked: rgb(var(--primary));
   --switch-border-checked: rgb(var(--primary));
   --switch-border-hover: rgb(var(--gray-6));
   --switch-bg-hover: rgb(var(--gray-6));
   --checkline-color: rgb(255 255 255);
-  --circle-color: rgb(var(--gray-1));
+  --circle-color: rgb(var(--gray-5));
   transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
   @apply relative m-0 inline-block  h-[21px] w-[38px] cursor-pointer appearance-none   rounded-xl   border border-[var(--switch-border)]  bg-[var(--switch-bg)] align-top outline-none focus:outline-2 focus-visible:outline   focus-visible:outline-offset-2  focus-visible:outline-primary;
 }
