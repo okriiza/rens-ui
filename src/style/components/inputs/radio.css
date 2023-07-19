@@ -1,8 +1,8 @@
 .radio {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --radio-bg: rgb(var(--gray-1));
-  --radio-border: rgb(var(--gray-6));
+  --radio-bg: rgb(var(--slate-3));
+  --radio-border: rgb(var(--gray-4));
   --radio-bg-checked: rgb(var(--primary));
   --radio-border-checked: rgb(var(--primary));
   --radio-border-hover: rgb(var(--gray-7));
