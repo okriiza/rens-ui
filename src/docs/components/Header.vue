@@ -27,8 +27,8 @@
         <NuxtLink to="/getting-started" class="btn-primary btn font-semibold"
           >Get Started</NuxtLink
         >
-        <NuxtLink to="/components/accordion" class="btn font-semibold"
-          >Components</NuxtLink
+        <NuxtLink to="/elements/button" class="btn font-semibold"
+          >Elements</NuxtLink
         >
       </div>
     </div>

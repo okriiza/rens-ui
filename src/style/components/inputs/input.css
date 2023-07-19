@@ -1,5 +1,5 @@
 .input {
-  @apply w-full h-10 max-w-xs px-3 text-base border-2 outline-none rounded-xl border-gray-6 bg-gray-1 text-content1;
+  @apply w-full h-10 max-w-xs px-4 text-sm border outline-none rounded-lg border-gray-4 bg-slate-3 text-content1;
 }
 
 /* Colors */
@@ -25,6 +25,10 @@
 
 /* Ghost */
 
+.input-ghost {
+  @apply bg-transparent;
+}
+
 .input-ghost-primary {
   @apply transition-colors bg-transparent hover:border-primary focus:border-primary;
 }
@@ -47,24 +51,12 @@
 
 /* Size */
 
-.input-xs {
-  @apply h-6 text-xs rounded-lg;
-}
-
 .input-sm {
   @apply h-8 text-sm;
 }
 
-.input-md {
-  @apply h-10 text-base;
-}
-
 .input-lg {
-  @apply text-base h-11;
-}
-
-.input-xl {
-  @apply h-12 text-lg;
+  @apply h-12 text-sm;
 }
 
 /* Extra */
@@ -95,7 +87,7 @@
 }
 
 .input-solid-secondary {
-  @apply border-transparent bg-purple-4 text-purple-11 placeholder:text-purple-9;
+  @apply border-transparent bg-pink-4 text-pink-11 placeholder:text-pink-9;
 }
 
 .input-solid-success {
