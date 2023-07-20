@@ -1,5 +1,5 @@
 .textarea {
-  @apply h-fit w-full max-w-xs rounded-xl border-2  border-gray-6 bg-gray-1  py-2.5 px-3 text-base text-content1 outline-none;
+  @apply h-fit w-full max-w-xs rounded-lg border  border-gray-4 bg-slate-3  py-2.5 px-3 text-sm text-content1 outline-none;
 }
 
 /* Colors */
@@ -71,7 +71,7 @@
 }
 
 .textarea-solid-secondary {
-  @apply border-transparent bg-purple-4 text-purple-11 placeholder:text-purple-9;
+  @apply border-transparent bg-pink-4 text-pink-11 placeholder:text-pink-9;
 }
 
 .textarea-solid-success {
