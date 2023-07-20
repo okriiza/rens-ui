@@ -27,14 +27,12 @@ useHead({
     {
       hid: 'description',
       name: 'description',
-      content:
-        'Rens UI - Free Open Source Tailwind CSS Component Library With Modern UI.'
+      content: 'Rens UI - Tailwind CSS Component Library With Modern UI.'
     },
     {
       hid: 'og:description',
       name: 'og:description',
-      content:
-        'Rens UI - Free Open Source Tailwind CSS Component Library With Modern UI.'
+      content: 'Rens UI - Tailwind CSS Component Library With Modern UI.'
     },
     {
       hid: 'og:url',
@@ -75,8 +73,7 @@ useHead({
     {
       hid: 'twitter:description',
       name: 'twitter:description',
-      content:
-        'Rens UI - Free Open Source Tailwind CSS Component Library With Modern UI.'
+      content: 'Rens UI - Tailwind CSS Component Library With Modern UI.'
     },
     {
       hid: 'twitter:image',
