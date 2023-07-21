@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-gray-1 flex w-full  items-center px-2 py-2.5 shadow-xl sm:px-4;
+  @apply bg-backgroundSecondary flex w-full items-center px-2 py-2.5 shadow-xl sm:px-4;
 }
 .navbar-bordered {
   @apply border-gray-6 border-b;
@@ -10,7 +10,7 @@
 }
 
 .navbar-floating {
-  @apply fixed top-0 left-0 right-0 z-50 mx-auto mt-5 max-w-7xl rounded-xl;
+  @apply fixed top-0 left-0 right-0 z-50 mx-auto mt-5 max-w-7xl rounded-lg;
 }
 
 .navbar-floating.navbar-bordered {
@@ -18,7 +18,7 @@
 }
 
 .navbar-glass {
-  @apply bg-gray-1/70 backdrop-blur-[8px] backdrop-saturate-[50%];
+  @apply bg-backgroundSecondary/70 backdrop-blur-[8px] backdrop-saturate-[50%];
 }
 
 .navbar-rounded {

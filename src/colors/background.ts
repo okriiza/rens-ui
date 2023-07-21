@@ -8,6 +8,6 @@ export const background: BackgroundTheme = {
 
 export const backgroundDark: BackgroundTheme = {
   backgroundPrimary: '17 24 39',
-  backgroundSecondary: '31 41 55',
+  backgroundSecondary: '30 41 59',
   border: '55 65 81'
 }

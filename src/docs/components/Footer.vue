@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-6 rounded-lg bg-white shadow dark:bg-gray-900">
+  <footer class="mt-6 rounded-lg bg-white shadow dark:bg-slate-3">
     <div class="mx-auto w-full max-w-screen-xl p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="/" class="mb-4 flex items-center sm:mb-0">
