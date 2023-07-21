@@ -2,7 +2,7 @@
 .btn {
   transition-property: color, transform, background-color, border-color;
   transition-timing-function: ease-in;
-  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-lg bg-gray-3 px-4 text-center text-sm font-semibold text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
+  @apply inline-flex h-10 cursor-pointer select-none items-center justify-center rounded-lg bg-backgroundSecondary px-4 text-center text-sm font-semibold text-content1 duration-150 will-change-transform focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-6  active:scale-[0.97];
 }
 
 .btn:where(

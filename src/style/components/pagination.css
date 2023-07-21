@@ -18,7 +18,7 @@
   @apply pointer-events-none opacity-50;
 }
 
-.pagination input[type="radio"] {
+.pagination input[type='radio'] {
   @apply invisible absolute opacity-0;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .pagination.pagination-bordered .btn {
-  @apply border-gray-6 border;
+  @apply border-border border-x border-y;
 }
 
 .pagination.pagination-bordered .btn.btn-active {
