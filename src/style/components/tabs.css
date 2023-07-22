@@ -40,31 +40,31 @@
 }
 
 .tab-pill {
-  @apply rounded-xl  border-transparent py-2   leading-5;
+  @apply rounded-lg  border-transparent py-2   leading-5;
 }
 
 .tab-pill:not(.tab-active) {
-  @apply active:bg-gray-5 hover:bg-gray-4;
+  @apply active:bg-gray-4 hover:bg-gray-3;
 }
 
 .tab-pill.tab-active {
-  @apply border-gray-6 bg-gray-5 text-content1;
+  @apply border-gray-6 bg-gray-4 text-content1;
 }
 
 .tabs-boxed {
-  @apply bg-gray-3 rounded-xl p-1;
+  @apply bg-backgroundSecondary rounded-lg p-1;
 }
 
 .tabs-boxed .tab {
-  @apply rounded-xl py-2 leading-5;
+  @apply rounded-lg py-2 leading-5;
 }
 
 .tabs-boxed .tab:not(.tab-active) {
-  @apply active:bg-gray-5 hover:bg-gray-4 hover:text-content1;
+  @apply active:bg-gray-4 hover:bg-gray-5 hover:text-content1;
 }
 
 .tabs-boxed .tab.tab-active {
-  @apply bg-gray-5 text-content1;
+  @apply bg-gray-4 text-content1;
 }
 
 .tab-toggle {
@@ -84,9 +84,9 @@
 }
 
 .tab-toggle:checked + .tab.tab-pill {
-  @apply bg-gray-5 text-content1;
+  @apply bg-gray-4 text-content1;
 }
 
 .tabs-boxed .tab-toggle:checked + .tab {
-  @apply bg-gray-5 text-content1;
+  @apply bg-gray-4 text-content1;
 }
