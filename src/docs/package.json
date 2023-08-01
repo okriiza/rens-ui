@@ -14,7 +14,7 @@
     "@types/node": "^18.15.12",
     "@vueuse/core": "^10.2.1",
     "@vueuse/nuxt": "^10.2.1",
-    "nuxt": "^3.5.2"
+    "nuxt": "^3.6.5"
   },
   "dependencies": {
     "@nuxt/devtools": "^0.6.7"
