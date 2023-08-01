@@ -1,5 +1,5 @@
 <script setup>
-const source = ref('npm install rensui')
+const source = ref('npm install rens-ui')
 const { text, copy, copied, isSupported } = useClipboard({ source })
 </script>
 
@@ -41,7 +41,7 @@ const { text, copy, copied, isSupported } = useClipboard({ source })
             @click="copy(source)"
           >
             <div class="flex items-center">
-              <span class="mr-3">$ npm install rensui</span> |
+              <span class="mr-3">$ npm install rens-ui</span> |
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ml-3 h-5 w-5"

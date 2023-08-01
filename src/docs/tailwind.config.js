@@ -19,5 +19,6 @@ export default {
       }
     }
   },
-  plugins: [require('../../dist/js'), require('@tailwindcss/typography')]
+  plugins: [require('rens-ui'), require('@tailwindcss/typography')]
+  // plugins: [require('../../dist/js'), require('@tailwindcss/typography')]
 }

@@ -99,7 +99,7 @@
       <div class="mt-10">
         <div class="text-center">
           <p class="mt-4 text-sm text-content1 sm:order-first sm:mt-0">
-            &copy; 2023 RensUI. Made with ❤️ for Developers.
+            &copy; 2023 Rens UI. Made with ❤️ for Developers.
           </p>
         </div>
       </div>
