@@ -1,7 +1,7 @@
 {
   "name": "rensui",
   "version": "0.0.1",
-  "description": "Rens UI - Free Open Source Tailwind CSS Component Library With Modern UI.",
+  "description": "Rens UI - Tailwind CSS Component Library With Modern UI.",
   "author": "Rendi Okriza Putra",
   "license": "MIT",
   "repository": {
@@ -46,7 +46,7 @@
     "dev": "cd src/docs && pnpm dev",
     "test": "vitest __test__",
     "clean": "rimraf ./dist",
-    "npm:publish": "pnpm run build && git push --follow-tags origin main && pnpm publish"
+    "npm:publish": "pnpm run build && git push --follow-tags origin main && npm publish"
   },
   "devDependencies": {
     "@types/node": "^20.3.2",
