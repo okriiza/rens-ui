@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/okriiza/rensui.git"
+    "url": "git+https://github.com/okriiza/rens-ui.git"
   },
   "keywords": [
     "tailwindcss",
@@ -20,7 +20,7 @@
     "ui"
   ],
   "bugs": {
-    "url": "https://github.com/okriiza/rensui/issues"
+    "url": "https://github.com/okriiza/rens-ui/issues"
   },
   "homepage": "https://rensui.okriiza.my.id",
   "main": "dist/js/index.js",
