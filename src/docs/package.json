@@ -17,6 +17,7 @@
     "nuxt": "^3.6.5"
   },
   "dependencies": {
-    "@nuxt/devtools": "^0.6.7"
+    "@nuxt/devtools": "^0.6.7",
+    "rens-ui": "^0.0.1"
   }
 }
