@@ -60,7 +60,10 @@ const copy = (_e: MouseEvent) => {
   transition: all 200ms;
   transform: scale(0.75);
   opacity: 0;
-  @apply bg-blue-base hover:bg-blue-hover focus:bg-blue-pressed;
+  background-color: #1c85ff;
+}
+.btn-copy:hover {
+  background-color: #339dff;
 }
 
 .btn-copy.show {
