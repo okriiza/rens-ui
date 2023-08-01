@@ -1,12 +1,12 @@
 .checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
-  --checkbox-bg: rgb(var(--gray-1));
-  --checkbox-border: rgb(var(--gray-6));
+  --checkbox-bg: rgb(var(--gray-background));
+  --checkbox-border: rgb(var(--gray-border));
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
-  --checkbox-border-hover: rgb(var(--gray-7));
-  --checkbox-bg-hover: rgb(var(--gray-3));
+  --checkbox-border-hover: rgb(var(--gray-hover));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkline-color: rgb(255 255 255);
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   @apply relative m-0 inline-block h-5 w-5 cursor-pointer appearance-none rounded-md border border-[var(--checkbox-border)] bg-[var(--checkbox-bg)]   align-top   accent-backgroundPrimary outline-none focus:outline-2   focus-visible:outline   focus-visible:outline-offset-2 focus-visible:outline-primary;
@@ -28,7 +28,7 @@
 }
 
 .checkbox:disabled {
-  @apply cursor-not-allowed border-gray-7 bg-gray-7 opacity-50;
+  @apply cursor-not-allowed border-gray-border bg-gray-background opacity-50;
 }
 
 .checkbox:disabled + label {
@@ -204,46 +204,46 @@
 /* Solid */
 .checkbox-solid {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
-  @apply border-transparent bg-gray-4;
+  --checkbox-bg-hover: rgb(var(--gray-hover));
+  @apply border-transparent bg-gray-border;
 }
 
 .checkbox-solid-primary {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkbox-bg-checked: rgb(var(--primary));
   --checkbox-border-checked: rgb(var(--primary));
-  @apply border-transparent bg-gray-4;
+  @apply border-transparent bg-gray-border;
 }
 
 .checkbox-solid-secondary {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkbox-bg-checked: rgb(var(--secondary));
   --checkbox-border-checked: rgb(var(--secondary));
-  @apply border-transparent bg-gray-4;
+  @apply border-transparent bg-gray-border;
 }
 
 .checkbox-solid-success {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkbox-bg-checked: rgb(var(--success));
   --checkbox-border-checked: rgb(var(--success));
-  @apply border-transparent bg-gray-4;
+  @apply border-transparent bg-gray-border;
 }
 
 .checkbox-solid-warning {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkbox-bg-checked: rgb(var(--warning));
   --checkbox-border-checked: rgb(var(--warning));
-  @apply border-transparent bg-gray-4;
+  @apply border-transparent bg-gray-border;
 }
 
 .checkbox-solid-error {
   --checkbox-border-hover: transparent;
-  --checkbox-bg-hover: rgb(var(--gray-5));
+  --checkbox-bg-hover: rgb(var(--gray-hover));
   --checkbox-bg-checked: rgb(var(--error));
   --checkbox-border-checked: rgb(var(--error));
-  @apply border-transparent bg-gray-4;
+  @apply border-transparent bg-gray-border;
 }

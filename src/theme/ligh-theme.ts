@@ -1,6 +1,6 @@
 import {
   blue,
-  cyan,
+  orange,
   gray,
   green,
   pink,
@@ -9,11 +9,10 @@ import {
   yellow,
   background,
   baseColors,
-  text,
-} from "../colors";
-import { slate } from "../colors/slate";
-import { PalleteTheme, Theme } from "../types/theme.types";
-import { addPrefix } from "../utils/prefix";
+  text
+} from '../colors'
+import { PalleteTheme, Theme } from '../types/theme.types'
+import { addPrefix } from '../utils/prefix'
 
 const pallete: PalleteTheme = {
   ...blue,
@@ -21,24 +20,23 @@ const pallete: PalleteTheme = {
   ...green,
   ...yellow,
   ...red,
-  ...cyan,
+  ...orange,
   ...pink,
-  ...gray,
-  ...slate,
-};
+  ...gray
+}
 
 const colors = {
   ...background,
   ...text,
   ...baseColors,
-  ...pallete,
-};
+  ...pallete
+}
 
 export const lightTheme: Theme = {
-  themeName: "light",
-  colorScheme: "light",
+  themeName: 'light',
+  colorScheme: 'light',
   prefersColorScheme: false,
   colors: {
-    ...addPrefix({ ...colors }),
-  },
-};
+    ...addPrefix({ ...colors })
+  }
+}

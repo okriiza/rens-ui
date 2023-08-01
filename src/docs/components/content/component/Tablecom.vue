@@ -26,7 +26,6 @@ defineProps({
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
-              <th>Address</th>
             </tr>
           </thead>
           <tbody>
@@ -35,21 +34,18 @@ defineProps({
               <td>Amy Shaw</td>
               <td>(586) 461-4374</td>
               <td>sem@aol.com</td>
-              <td>1726 Libero St.</td>
             </tr>
             <tr>
               <th>17</th>
               <td>Kiara Rice</td>
               <td>(416) 793-3865</td>
               <td>integer.sem@hotmail.com</td>
-              <td>757-7767 Pellentesque Road</td>
             </tr>
             <tr>
               <th>19</th>
               <td>Ryan Carlson</td>
               <td>(341) 536-4865</td>
               <td>ipsum.donec@yahoo.com</td>
-              <td>473-202 Mattis Av.</td>
             </tr>
           </tbody>
         </table>
@@ -64,7 +60,6 @@ defineProps({
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
-              <th>Address</th>
             </tr>
           </thead>
           <tbody>
@@ -73,21 +68,18 @@ defineProps({
               <td>Kasper Pollard</td>
               <td>(683) 593-2687</td>
               <td>lorem.sit.amet@protonmail.edu</td>
-              <td>Ap #825-4941 Enim, St.</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Abra Buck</td>
               <td>(825) 419-2084</td>
               <td>vitae@outlook.ca</td>
-              <td>Ap #851-3571 Suspendisse Av.</td>
             </tr>
             <tr>
               <td>3</td>
               <td>Leilani Preston</td>
               <td>1-835-660-8911</td>
               <td>vitae.mauris.sit@yahoo.edu</td>
-              <td>Ap #973-1545 Nulla Street</td>
             </tr>
           </tbody>
         </table>
@@ -102,7 +94,6 @@ defineProps({
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
-              <th>Address</th>
             </tr>
           </thead>
           <tbody>
@@ -111,21 +102,18 @@ defineProps({
               <td>Kasper Pollard</td>
               <td>(683) 593-2687</td>
               <td>lorem.sit.amet@protonmail.edu</td>
-              <td>Ap #825-4941 Enim, St.</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Abra Buck</td>
               <td>(825) 419-2084</td>
               <td>vitae@outlook.ca</td>
-              <td>Ap #851-3571 Suspendisse Av.</td>
             </tr>
             <tr>
               <td>3</td>
               <td>Leilani Preston</td>
               <td>1-835-660-8911</td>
               <td>vitae.mauris.sit@yahoo.edu</td>
-              <td>Ap #973-1545 Nulla Street</td>
             </tr>
           </tbody>
         </table>
@@ -140,7 +128,6 @@ defineProps({
               <th>Name</th>
               <th>Phone</th>
               <th>Email</th>
-              <th>Address</th>
             </tr>
           </thead>
           <tbody>
@@ -149,21 +136,18 @@ defineProps({
               <td>Kasper Pollard</td>
               <td>(683) 593-2687</td>
               <td>lorem.sit.amet@protonmail.edu</td>
-              <td>Ap #825-4941 Enim, St.</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Abra Buck</td>
               <td>(825) 419-2084</td>
               <td>vitae@outlook.ca</td>
-              <td>Ap #851-3571 Suspendisse Av.</td>
             </tr>
             <tr>
               <td>3</td>
               <td>Leilani Preston</td>
               <td>1-835-660-8911</td>
               <td>vitae.mauris.sit@yahoo.edu</td>
-              <td>Ap #973-1545 Nulla Street</td>
             </tr>
           </tbody>
         </table>

@@ -1,19 +1,18 @@
-import { addPrefix } from "../utils/prefix";
+import { addPrefix } from '../utils/prefix'
 import {
   blueDark,
   greenDark,
   purpleDark,
   yellowDark,
   redDark,
-  cyanDark,
+  orangeDark,
   pinkDark,
   grayDark,
   backgroundDark,
   textDark,
-  baseColorsDark,
-} from "../colors";
-import { PalleteTheme, Theme } from "../types/theme.types";
-import { slateDark } from "../colors/slate";
+  baseColorsDark
+} from '../colors'
+import { PalleteTheme, Theme } from '../types/theme.types'
 
 const pallete: PalleteTheme = {
   ...blueDark,
@@ -21,24 +20,23 @@ const pallete: PalleteTheme = {
   ...purpleDark,
   ...yellowDark,
   ...redDark,
-  ...cyanDark,
+  ...orangeDark,
   ...pinkDark,
-  ...grayDark,
-  ...slateDark,
-};
+  ...grayDark
+}
 
 const colors = {
   ...backgroundDark,
   ...textDark,
   ...baseColorsDark,
-  ...pallete,
-};
+  ...pallete
+}
 
 export const darkTheme: Theme = {
-  themeName: "dark",
-  colorScheme: "dark",
+  themeName: 'dark',
+  colorScheme: 'dark',
   prefersColorScheme: true,
   colors: {
-    ...addPrefix({ ...colors }),
-  },
-};
+    ...addPrefix({ ...colors })
+  }
+}

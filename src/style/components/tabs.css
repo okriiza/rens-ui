@@ -11,15 +11,15 @@
 }
 
 .tab-bordered {
-  @apply border-gray-6 border-b-2 py-2;
+  @apply border-gray-border border-b-2 py-2;
 }
 
 .tab {
-  @apply flex  cursor-pointer   focus:outline-none;
+  @apply flex cursor-pointer font-medium focus:outline-none;
 }
 
 .tab:not(.tab-active) {
-  @apply hover:text-content1;
+  @apply hover:text-content3;
 }
 
 .tabs:has(.tab-underline) .tab {
@@ -44,27 +44,11 @@
 }
 
 .tab-pill:not(.tab-active) {
-  @apply active:bg-gray-4 hover:bg-gray-3;
+  @apply active:bg-gray-pressed hover:bg-gray-hover;
 }
 
 .tab-pill.tab-active {
-  @apply border-gray-6 bg-gray-4 text-content1;
-}
-
-.tabs-boxed {
-  @apply bg-backgroundSecondary rounded-lg p-1;
-}
-
-.tabs-boxed .tab {
-  @apply rounded-lg py-2 leading-5;
-}
-
-.tabs-boxed .tab:not(.tab-active) {
-  @apply active:bg-gray-4 hover:bg-gray-5 hover:text-content1;
-}
-
-.tabs-boxed .tab.tab-active {
-  @apply bg-gray-4 text-content1;
+  @apply border-gray-border bg-gray-base text-white;
 }
 
 .tab-toggle {
@@ -84,9 +68,5 @@
 }
 
 .tab-toggle:checked + .tab.tab-pill {
-  @apply bg-gray-4 text-content1;
-}
-
-.tabs-boxed .tab-toggle:checked + .tab {
-  @apply bg-gray-4 text-content1;
+  @apply bg-gray-pressed text-white;
 }

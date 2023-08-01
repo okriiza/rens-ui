@@ -5,9 +5,10 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col h-screen justify-between">
     <Navbar />
     <Header />
+    <Featured />
     <Footer />
   </div>
 </template>

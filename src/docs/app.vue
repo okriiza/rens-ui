@@ -6,7 +6,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      type: 'image/png',
+      type: 'image/x-icon',
       href: '/favicon.ico'
     }
   ],
@@ -86,7 +86,9 @@ useHead({
 
 <template>
   <div>
-    <NuxtLoadingIndicator />
+    <NuxtLoadingIndicator
+      color="repeating-linear-gradient(to right,#1C85FF 0%,#339DFF 50%,#25BA33 100%)"
+    />
     <NuxtPage />
   </div>
 </template>

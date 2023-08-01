@@ -34,7 +34,7 @@ defineProps({
           <div class="flex gap-3">
             <button class="btn btn-error btn-block">Delete</button>
 
-            <button class="btn btn-block">Cancel</button>
+            <button class="btn btn-primary btn-block">Submit</button>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ defineProps({
           >
           <div class="flex gap-3">
             <button class="btn btn-error btn-block">Delete</button>
-            <button class="btn btn-block">Cancel</button>
+            <button class="btn btn-primary btn-block">Submit</button>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@ defineProps({
           >
           <div class="flex gap-3">
             <button class="btn btn-error btn-block">Delete</button>
-            <button class="btn btn-block">Cancel</button>
+            <button class="btn btn-primary btn-block">Submit</button>
           </div>
         </div>
       </div>

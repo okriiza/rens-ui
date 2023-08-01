@@ -14,38 +14,42 @@ defineProps({
 <template>
   <div class="not-prose">
     <template v-if="basic">
-      <div class="form-group">
-        <div class="form-field">
-          <label class="form-label text-error">
-            Email address
-            <span class="form-label-alt text-error">Alternative</span>
-          </label>
+      <div class="card">
+        <div class="card-body">
+          <div class="form-group">
+            <div class="form-field">
+              <label class="form-label text-error">
+                Email address
+                <span class="form-label-alt text-error">Alternative</span>
+              </label>
 
-          <input
-            placeholder="Type here"
-            type="email"
-            class="input max-w-full input-error"
-          />
-          <label class="form-label">
-            <span class="form-label-alt text-error"
-              >Please enter a valid email.</span
-            >
-            <span class="form-label-alt text-error">Alternative</span>
-          </label>
-        </div>
-        <div class="form-field">
-          <label class="form-label text-success">Email address</label>
+              <input
+                placeholder="Type here"
+                type="email"
+                class="input max-w-full input-error"
+              />
+              <label class="form-label">
+                <span class="form-label-alt text-error"
+                  >Please enter a valid email.</span
+                >
+                <span class="form-label-alt text-error">Alternative</span>
+              </label>
+            </div>
+            <div class="form-field">
+              <label class="form-label text-success">Email address</label>
 
-          <input
-            placeholder="Type here"
-            type="email"
-            class="input max-w-full input-success"
-          />
-          <label class="form-label">
-            <span class="form-label-alt text-success"
-              >Please enter a valid email.</span
-            >
-          </label>
+              <input
+                placeholder="Type here"
+                type="email"
+                class="input max-w-full input-success"
+              />
+              <label class="form-label">
+                <span class="form-label-alt text-success"
+                  >Please enter a valid email.</span
+                >
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </template>
@@ -106,13 +110,13 @@ defineProps({
       </div>
     </template>
     <template v-else>
-      <section class="bg-gray-3 rounded-xl">
+      <section class="bg-backgroundSecondary rounded-xl">
         <div class="p-8 shadow-lg">
           <form class="space-y-4">
             <div class="w-full">
               <label class="sr-only" for="name">Name</label>
               <input
-                class="input input-solid max-w-full"
+                class="input max-w-full"
                 placeholder="Name"
                 type="text"
                 id="name"
@@ -123,7 +127,7 @@ defineProps({
               <div>
                 <label class="sr-only" for="email">Email</label>
                 <input
-                  class="input input-solid max-w-full"
+                  class="input max-w-full"
                   placeholder="Email address"
                   type="email"
                   id="email"
@@ -133,7 +137,7 @@ defineProps({
               <div>
                 <label class="sr-only" for="phone">Phone</label>
                 <input
-                  class="input input-solid max-w-full"
+                  class="input max-w-full"
                   placeholder="Phone Number"
                   type="tel"
                   id="phone"
@@ -145,7 +149,7 @@ defineProps({
               <label class="sr-only" for="message">Message</label>
 
               <textarea
-                class="textarea textarea-solid max-w-full"
+                class="textarea max-w-full"
                 placeholder="Message"
                 rows="8"
                 id="message"

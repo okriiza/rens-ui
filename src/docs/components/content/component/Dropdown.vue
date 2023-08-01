@@ -49,9 +49,9 @@ defineProps({
       <div class="dropdown">
         <label class="btn btn-primary my-2" tabindex="1">Click Me</label>
         <div class="dropdown-menu">
-          <a class="dropdown-item text-sm">Profile</a>
-          <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-          <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+          <a class="dropdown-item text-sm">Item 1</a>
+          <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+          <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
         </div>
       </div>
     </template>
@@ -82,25 +82,25 @@ defineProps({
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Top Left</label>
           <div class="dropdown-menu dropdown-menu-top-left">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Top Center</label>
           <div class="dropdown-menu dropdown-menu-top-center">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Top Right</label>
           <div class="dropdown-menu dropdown-menu-top-right">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
       </div>
@@ -110,25 +110,25 @@ defineProps({
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">left Top</label>
           <div class="dropdown-menu dropdown-menu-left-top">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Left Center</label>
           <div class="dropdown-menu dropdown-menu-left">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Left Bottom</label>
           <div class="dropdown-menu dropdown-menu-left-bottom">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
       </div>
@@ -138,25 +138,25 @@ defineProps({
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Right Top</label>
           <div class="dropdown-menu dropdown-menu-right-top">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Right Center</label>
           <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Right Bottom</label>
           <div class="dropdown-menu dropdown-menu-right-bottom">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
       </div>
@@ -166,27 +166,27 @@ defineProps({
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Bottom Left</label>
           <div class="dropdown-menu dropdown-menu-bottom-left">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
 
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Bottom Center</label>
           <div class="dropdown-menu dropdown-menu-bottom-center">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
 
         <div class="dropdown">
           <label class="btn btn-primary my-2" tabindex="0">Buttom Right</label>
           <div class="dropdown-menu dropdown-menu-bottom-right">
-            <a class="dropdown-item text-sm">Profile</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-            <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+            <a class="dropdown-item text-sm">Item 1</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+            <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@ defineProps({
       <div class="dropdown">
         <label class="btn btn-primary my-2" tabindex="0">Click Me</label>
         <div
-          class="dropdown-menu dropdown-menu-bottom-right border border-gray-10"
+          class="dropdown-menu dropdown-menu-bottom-right border border-gray-border"
         >
           <a class="dropdown-item text-sm">Profile</a>
           <a tabindex="-1" class="dropdown-item text-sm">Settings</a>

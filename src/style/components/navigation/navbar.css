@@ -2,7 +2,7 @@
   @apply bg-backgroundSecondary flex w-full items-center px-2 py-2.5 shadow-xl sm:px-4;
 }
 .navbar-bordered {
-  @apply border-gray-6 border-b;
+  @apply border-gray-border border-b;
 }
 
 .navbar-sticky {
@@ -10,7 +10,7 @@
 }
 
 .navbar-floating {
-  @apply fixed top-0 left-0 right-0 z-50 mx-auto mt-5 max-w-7xl rounded-lg;
+  @apply fixed top-0 left-0 right-0 z-50 mx-auto mt-5 max-w-7xl;
 }
 
 .navbar-floating.navbar-bordered {

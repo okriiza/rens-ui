@@ -1,5 +1,5 @@
 .badge {
-  @apply border-gray-3 bg-gray-3  inline-flex items-center whitespace-nowrap rounded-full border  py-[0.3rem]  px-2 text-center align-middle text-xs font-bold  leading-none text-content1;
+  @apply bg-gray-background  inline-flex items-center whitespace-nowrap rounded-full  py-[0.3rem]  px-2 text-center align-middle text-xs font-medium  leading-none text-content1;
 }
 
 .badge-primary {
@@ -23,71 +23,91 @@
 }
 
 .badge-outline {
-  @apply border-gray-6 border bg-transparent text-content1;
+  @apply border border-gray-border  bg-transparent text-content1;
 }
 
 .badge-outline-primary {
-  @apply border-primary bg-transparent text-primary;
+  @apply border border-blue-border bg-transparent text-primary;
 }
 
 .badge-outline-secondary {
-  @apply border-secondary bg-transparent text-secondary;
+  @apply border border-pink-border bg-transparent text-secondary;
 }
 
 .badge-outline-success {
-  @apply border-success bg-transparent text-success;
+  @apply border border-green-border bg-transparent text-success;
 }
 
 .badge-outline-error {
-  @apply border-error bg-transparent text-error;
+  @apply border border-red-border bg-transparent text-error;
 }
 
 .badge-outline-warning {
-  @apply border-warning bg-transparent text-warning;
+  @apply border border-orange-border bg-transparent text-warning;
 }
 
-.badge-flat {
-  @apply text-gray-11 bg-gray-4 border-none bg-transparent;
+.badge-soft {
+  @apply text-content1 bg-gray-background border-none;
 }
 
-.badge-flat-primary {
-  @apply text-blue-11 bg-blue-4 border-none;
+.badge-soft-primary {
+  @apply text-blue-base bg-blue-background border-none;
 }
 
-.badge-flat-secondary {
-  @apply text-pink-11 bg-pink-4 border-none;
+.badge-soft-secondary {
+  @apply text-pink-base bg-pink-background border-none;
 }
 
-.badge-flat-success {
-  @apply text-green-11 bg-green-4 border-none;
+.badge-soft-success {
+  @apply text-green-base bg-green-background border-none;
 }
 
-.badge-flat-error {
-  @apply text-red-11 bg-red-4 border-none;
+.badge-soft-warning {
+  @apply text-orange-base bg-orange-background border-none;
 }
 
-.badge-flat-warning {
-  @apply text-yellow-11 bg-yellow-4 border-none;
+.badge-soft-error {
+  @apply text-red-base bg-red-background border-none;
+}
+
+.badge-subtle {
+  @apply text-content1 bg-gray-background border border-gray-border;
+}
+
+.badge-subtle-primary {
+  @apply text-blue-base bg-blue-background border border-blue-border;
+}
+
+.badge-subtle-secondary {
+  @apply text-pink-base bg-pink-background border border-pink-border;
+}
+
+.badge-subtle-success {
+  @apply text-green-base bg-green-background border border-green-border;
+}
+
+.badge-subtle-warning {
+  @apply text-orange-base bg-orange-background border border-orange-border;
+}
+
+.badge-subtle-error {
+  @apply text-red-base bg-red-background border border-red-border;
 }
 
 .badge-xs {
-  @apply p-[0.25rem] text-[0.65rem];
+  @apply px-1.5 py-0.5 text-xs;
 }
 
 .badge-sm {
-  @apply py-[0.25rem] px-[0.375rem] text-[0.73rem];
+  @apply px-2 py-1 text-xs;
 }
 
 .badge-md {
-  @apply py-[0.3rem] px-2 text-xs leading-none;
+  @apply px-2 py-1 text-sm leading-none;
 }
 
 .badge-lg {
-  @apply py-2 px-2.5 text-base leading-none;
-}
-
-.badge-xl {
-  @apply py-2.5 px-3 text-xl leading-none;
+  @apply px-2.5 py-1.5 text-sm leading-none;
 }
 
 .badge-square {

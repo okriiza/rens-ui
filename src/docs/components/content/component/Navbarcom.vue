@@ -30,45 +30,51 @@ defineProps({
 <template>
   <div class="not-prose">
     <template v-if="basic">
-      <div class="navbar">
-        <div class="navbar-start">
-          <a class="navbar-item">Rens UI</a>
+      <div class="bg-gray-background p-4">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="navbar-item">Rens UI</a>
+          </div>
         </div>
       </div>
     </template>
 
     <template v-else-if="startEnd">
-      <div class="navbar">
-        <div class="navbar-start">
-          <a class="navbar-item">Rens UI</a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item">Home</a>
-          <a class="navbar-item">About</a>
-          <a class="navbar-item">Contact</a>
+      <div class="bg-gray-background p-4">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="navbar-item">Rens UI</a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item">Item 1</a>
+            <a class="navbar-item">Item 2</a>
+            <a class="navbar-item">Item 3</a>
+          </div>
         </div>
       </div>
     </template>
 
     <template v-else-if="withDrop">
-      <div class="navbar rounded-lg">
-        <div class="navbar-start">
-          <a class="navbar-item">Rens UI</a>
-        </div>
-        <div class="navbar-end">
-          <div class="avatar avatar-ring avatar-md">
-            <div class="dropdown-container">
-              <div class="dropdown">
-                <label class="flex cursor-pointer px-0" tabindex="0">
-                  <img
-                    src="https://ui-avatars.com/api/?name=Rens+UI"
-                    alt="avatar"
-                  />
-                </label>
-                <div class="dropdown-menu dropdown-menu-bottom-left">
-                  <a class="dropdown-item text-sm">Profile</a>
-                  <a tabindex="-1" class="dropdown-item text-sm">Settings</a>
-                  <a tabindex="-1" class="dropdown-item text-sm">Logout</a>
+      <div class="bg-gray-background p-4">
+        <div class="navbar rounded-lg">
+          <div class="navbar-start">
+            <a class="navbar-item">Rens UI</a>
+          </div>
+          <div class="navbar-end">
+            <div class="avatar avatar-ring avatar-md">
+              <div class="dropdown-container">
+                <div class="dropdown">
+                  <label class="flex cursor-pointer px-0" tabindex="0">
+                    <img
+                      src="https://ui-avatars.com/api/?name=Rens+UI"
+                      alt="avatar"
+                    />
+                  </label>
+                  <div class="dropdown-menu dropdown-menu-bottom-left">
+                    <a class="dropdown-item text-sm">Item 1</a>
+                    <a tabindex="-1" class="dropdown-item text-sm">Item 2</a>
+                    <a tabindex="-1" class="dropdown-item text-sm">Item 3</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,29 +84,33 @@ defineProps({
     </template>
 
     <template v-else-if="startCenterEnd">
-      <div class="navbar">
-        <div class="navbar-start">
-          <a class="navbar-item">Rens UI</a>
-        </div>
-        <div class="navbar-center">
-          <a class="navbar-item">Home</a>
-          <a class="navbar-item">About</a>
-          <a class="navbar-item">Contact</a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item">Home</a>
+      <div class="bg-gray-background p-4">
+        <div class="navbar">
+          <div class="navbar-start">
+            <a class="navbar-item">Rens UI</a>
+          </div>
+          <div class="navbar-center">
+            <a class="navbar-item">Item 1</a>
+            <a class="navbar-item">Item 2</a>
+            <a class="navbar-item">Item 3</a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item">Item 1</a>
+          </div>
         </div>
       </div>
     </template>
 
     <template v-else-if="sticky">
-      <div class="sticky max-h-96 overflow-y-auto rounded-lg bg-slate-4 p-4">
+      <div
+        class="sticky max-h-96 overflow-y-auto rounded-lg bg-gray-background p-4"
+      >
         <div class="navbar navbar-sticky sticky">
           <div class="navbar-start">
             <a class="navbar-item">Rens UI</a>
           </div>
           <div class="navbar-end">
-            <a class="navbar-item">Home</a>
+            <a class="navbar-item">Item</a>
           </div>
         </div>
         <p class="pb-3 text-base leading-7 text-content1">
@@ -131,24 +141,26 @@ defineProps({
     </template>
 
     <template v-else-if="glass">
-      <div class="navbar navbar-glass">
-        <div class="navbar-start">
-          <a class="navbar-item">Rens UI</a>
-        </div>
-        <div class="navbar-end">
-          <a class="navbar-item">Home</a>
+      <div class="bg-gray-background p-4">
+        <div class="navbar navbar-glass">
+          <div class="navbar-start">
+            <a class="navbar-item">Rens UI</a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item">Item</a>
+          </div>
         </div>
       </div>
     </template>
 
     <template v-else>
-      <div class="sticky max-h-96 overflow-y-auto rounded-lg bg-slate-4 p-4">
+      <div class="sticky max-h-96 overflow-y-auto bg-gray-background p-4">
         <div class="navbar navbar-floating sticky">
           <div class="navbar-start">
             <a class="navbar-item">Rens UI</a>
           </div>
           <div class="navbar-end">
-            <a class="navbar-item">Home</a>
+            <a class="navbar-item">Item</a>
           </div>
         </div>
         <p class="pb-3 text-base leading-7 text-content1">

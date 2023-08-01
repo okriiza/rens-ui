@@ -37,7 +37,7 @@ defineProps({
     <template v-else>
       <input
         type="file"
-        class="input-file file:bg-green-600 border-green-500 file:text-white"
+        class="input-file file:bg-green-600 border-green-500 file:text-white text-gray-400 dark:text-gray-300 bg-green-100 dark:bg-green-900"
       />
     </template>
   </div>

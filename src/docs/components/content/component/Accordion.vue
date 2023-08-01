@@ -44,35 +44,52 @@ defineProps({
           :id="`accordion-${ids}`"
           class="accordion-toggle"
         />
-        <label :for="`accordion-${ids}`" class="accordion-title"
-          ><span>{{ title }} {{ ids }}</span>
-          <span v-if="descTitle" class="text-sm font-normal">{{
-            descTitle
-          }}</span></label
-        >
+        <div class="accordion-header">
+          <label :for="`accordion-${ids}`" class="accordion-title"
+            ><span>{{ title }} {{ ids }}</span>
+            <span v-if="descTitle" class="text-sm font-normal">{{
+              descTitle
+            }}</span></label
+          >
+          <span class="accordion-icon" v-if="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+              ></path>
+            </svg>
+          </span>
+        </div>
       </template>
 
       <template v-else>
         <input type="checkbox" class="accordion-toggle" />
-        <label class="accordion-title"
-          ><span>{{ title }} {{ ids }}</span
-          ><span v-if="descTitle" class="text-sm font-normal">{{
-            descTitle
-          }}</span></label
-        >
+        <div class="accordion-header">
+          <label class="accordion-title"
+            ><span>{{ title }} {{ ids }}</span
+            ><span v-if="descTitle" class="text-sm font-normal">{{
+              descTitle
+            }}</span></label
+          >
+          <span class="accordion-icon" v-if="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+              ></path>
+            </svg>
+          </span>
+        </div>
       </template>
-      <span class="accordion-icon" v-if="icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
-          ></path>
-        </svg>
-      </span>
+
       <div class="accordion-content">
         <div class="min-h-0">
           {{ description }}

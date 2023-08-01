@@ -8,10 +8,6 @@ defineProps({
     type: Boolean,
     default: false
   },
-  solid: {
-    type: Boolean,
-    default: false
-  },
   ghost: {
     type: Boolean,
     default: false
@@ -49,24 +45,7 @@ defineProps({
         <textarea class="textarea textarea-error" placeholder="Error" />
       </div>
     </template>
-    <template v-else-if="solid">
-      <div class="space-y-2">
-        <textarea class="textarea textarea-solid mr-2" placeholder="Primary" />
-        <textarea
-          class="textarea textarea-solid-secondary mr-2"
-          placeholder="Secondary"
-        />
-        <textarea
-          class="textarea textarea-solid-success mr-2"
-          placeholder="Success"
-        />
-        <textarea
-          class="textarea textarea-solid-warning mr-2"
-          placeholder="Warning"
-        />
-        <textarea class="textarea textarea-solid-error" placeholder="Error" />
-      </div>
-    </template>
+
     <template v-else-if="ghost">
       <div class="space-y-2">
         <textarea

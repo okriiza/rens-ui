@@ -1,29 +1,17 @@
-import { ColorsTheme } from "../types/theme.types";
+import { ColorsTheme } from '../types/theme.types'
 
-export const red: ColorsTheme<"red"> = {
-  "red-1": "254 242 242",
-  "red-2": "254 226 226",
-  "red-3": "254 202 202",
-  "red-4": "252 165 165",
-  "red-5": "248 113 113",
-  "red-6": "239 68 68",
-  "red-7": "220 38 38",
-  "red-8": "185 28 28",
-  "red-9": "153 27 27",
-  "red-10": "127 29 29",
-  "red-11": "69 10 10",
-};
+export const red: ColorsTheme<'red'> = {
+  'red-base': '233 44 44',
+  'red-hover': '237 86 86',
+  'red-pressed': '186 35 35',
+  'red-border': '254 202 202',
+  'red-background': '254 235 235'
+}
 
-export const redDark: ColorsTheme<"red"> = {
-  "red-1": "69 10 10",
-  "red-2": "127 29 29",
-  "red-3": "153 27 27",
-  "red-4": "185 28 28",
-  "red-5": "220 38 38",
-  "red-6": "239 68 68",
-  "red-7": "248 113 113",
-  "red-8": "252 165 165",
-  "red-9": "254 202 202",
-  "red-10": "254 226 226",
-  "red-11": "254 242 242",
-};
+export const redDark: ColorsTheme<'red'> = {
+  'red-base': '247 65 66',
+  'red-hover': '249 103 103',
+  'red-pressed': '198 52 52',
+  'red-border': '70 34 34',
+  'red-background': '48 30 30'
+}

@@ -1,15 +1,15 @@
 <script setup>
 defineProps({
   basic: {
-    type: String,
+    type: Boolean,
     default: false
   },
   colors: {
-    type: String,
+    type: Boolean,
     default: false
   },
   flat: {
-    type: String,
+    type: Boolean,
     default: false
   }
 })
@@ -71,12 +71,10 @@ defineProps({
       ></progress>
     </template>
     <template v-else>
-      <!-- This will work on Edge or Chrome -->
       <progress class="progress"></progress>
       <progress class="progress progress-flat-success"></progress>
       <progress class="progress progress-flat-error"></progress>
 
-      <!-- For Safari, Firefox or Any other browser -->
       <div class="progress progress-indeterminate"></div>
     </template>
   </div>

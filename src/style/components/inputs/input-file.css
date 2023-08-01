@@ -1,14 +1,14 @@
 .input-file {
-  @apply h-10 w-full max-w-xs appearance-none overflow-hidden rounded-lg border  border-gray-4 bg-slate-3  pr-3 text-sm text-content1 focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-4;
+  @apply h-10 w-full max-w-xs appearance-none overflow-hidden rounded-lg border  border-gray-border bg-gray-background  pr-3 text-sm text-content3 focus:outline-2  focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-gray-border;
 }
 
 .input-file::-webkit-file-upload-button,
 .input-file::file-selector-button {
-  @apply mr-4 inline-flex h-full cursor-pointer select-none items-center justify-center border-none bg-gray-4 px-5 text-center text-sm font-medium text-content1;
+  @apply mr-4 inline-flex h-full cursor-pointer select-none items-center justify-center border-none bg-gray-base px-5 text-center text-sm font-medium text-white;
 }
 
 .input-file-primary {
-  @apply border-primary focus-visible:outline-primary;
+  @apply border-primary bg-blue-background focus-visible:outline-primary;
 }
 
 .input-file-primary::-webkit-file-upload-button {
@@ -16,7 +16,7 @@
 }
 
 .input-file-secondary {
-  @apply border-secondary  focus-visible:outline-secondary;
+  @apply border-secondary bg-pink-background focus-visible:outline-secondary;
 }
 
 .input-file-secondary::-webkit-file-upload-button {
@@ -24,15 +24,15 @@
 }
 
 .input-file-success {
-  @apply border-success  focus-visible:outline-success;
+  @apply border-success  bg-green-background focus-visible:outline-success;
 }
 
 .input-file-success::-webkit-file-upload-button {
-  @apply bg-success text-black focus-visible:outline-success;
+  @apply bg-success text-white focus-visible:outline-success;
 }
 
 .input-file-error {
-  @apply border-error  focus-visible:outline-error;
+  @apply border-error bg-red-background  focus-visible:outline-error;
 }
 
 .input-file-error::-webkit-file-upload-button {
@@ -40,11 +40,11 @@
 }
 
 .input-file-warning {
-  @apply border-warning focus-visible:outline-warning;
+  @apply border-warning bg-orange-background focus-visible:outline-warning;
 }
 
 .input-file-warning::-webkit-file-upload-button {
-  @apply bg-warning text-black focus-visible:outline-warning;
+  @apply bg-warning text-white focus-visible:outline-warning;
 }
 
 /* size */
@@ -80,7 +80,7 @@
 }
 
 .input-file-success::file-selector-button {
-  @apply bg-success text-black focus-visible:outline-success;
+  @apply bg-success text-white focus-visible:outline-success;
 }
 
 .input-file-error::file-selector-button {
@@ -88,5 +88,5 @@
 }
 
 .input-file-warning::file-selector-button {
-  @apply bg-warning text-black focus-visible:outline-warning;
+  @apply bg-warning text-white focus-visible:outline-warning;
 }

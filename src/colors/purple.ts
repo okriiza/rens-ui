@@ -1,29 +1,17 @@
-import { ColorsTheme } from "../types/theme.types";
+import { ColorsTheme } from '../types/theme.types'
 
-export const purple: ColorsTheme<"purple"> = {
-  "purple-1": "250 245 255",
-  "purple-2": "243 232 255",
-  "purple-3": "233 213 255",
-  "purple-4": "216 180 254",
-  "purple-5": "192 132 252",
-  "purple-6": "168 85 247",
-  "purple-7": "147 51 234",
-  "purple-8": "126 34 206",
-  "purple-9": "107 33 168",
-  "purple-10": "88 28 135",
-  "purple-11": "59 7 100",
-};
+export const purple: ColorsTheme<'purple'> = {
+  'purple-base': '139 44 233',
+  'purple-hover': '162 86 237',
+  'purple-pressed': '111 35 186',
+  'purple-border': '233 213 255',
+  'purple-background': '243 234 253'
+}
 
-export const purpleDark: ColorsTheme<"purple"> = {
-  "purple-1": "59 7 100",
-  "purple-2": "88 28 135",
-  "purple-3": "107 33 168",
-  "purple-4": "126 34 206",
-  "purple-5": "147 51 234",
-  "purple-6": "168 85 247",
-  "purple-7": "192 132 252",
-  "purple-8": "216 180 254",
-  "purple-9": "233 213 255",
-  "purple-10": "243 232 255",
-  "purple-11": "250 245 255",
-};
+export const purpleDark: ColorsTheme<'purple'> = {
+  'purple-base': '150 58 242',
+  'purple-hover': '171 97 245',
+  'purple-pressed': '120 46 194',
+  'purple-border': '51 32 70',
+  'purple-background': '38 29 48'
+}

@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'header-section': 'url(/svg/headerBg.svg)'
+        'header-section': 'url(/svg/headerBg.svg)',
+        blob: 'url(/svg/blob.svg)'
       },
       backgroundSize: {
         '50%': '50%',

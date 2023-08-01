@@ -1,16 +1,16 @@
 .avatar {
-  @apply relative inline-flex h-10 w-10  max-w-xs bg-gray-4 align-top text-xs;
+  @apply relative inline-flex h-10 w-10  max-w-xs bg-gray-background align-top text-xs;
 }
 
 .avatar > * {
   @apply flex w-full items-center justify-center;
 }
 
-.avatar:where(:not(.avatar-squared)) img {
+.avatar:where(:not(.avatar-square)) img {
   @apply h-full w-full overflow-hidden rounded-full object-cover object-center;
 }
 
-.avatar:where(.avatar-squared) img {
+.avatar:where(.avatar-square) img {
   @apply h-full w-full overflow-hidden rounded-[3px] object-cover object-center;
 }
 
@@ -18,12 +18,12 @@
   @apply rounded-full;
 }
 
-.avatar-squared {
+.avatar-square {
   @apply rounded;
 }
 
 .avatar-ring {
-  @apply ring-2 ring-gray-6;
+  @apply ring-2 ring-gray-border;
 }
 .avatar-ring-primary {
   @apply ring-2 ring-primary;
@@ -56,11 +56,11 @@
 
 .avatar-online.avatar-squared::before {
   transform: translate(50%, -50%);
-  @apply absolute right-0 top-0 flex h-2 w-2    items-center justify-center overflow-auto rounded-full border-2 border-success bg-green-6 content-[""];
+  @apply absolute right-0 top-0 flex h-2 w-2 items-center justify-center overflow-auto rounded-full border-2 border-success bg-green-background content-[""];
 }
 
 .avatar-online:not(.avatar-squared)::before {
-  @apply absolute right-0  block h-2 w-2 overflow-auto rounded-full border-2 border-success bg-green-6 content-[""];
+  @apply absolute right-0  block h-2 w-2 overflow-auto rounded-full border-2 border-success bg-green-background content-[""];
 }
 
 .avatar-group {
@@ -81,7 +81,7 @@
         .avatar-ring-warning
       )
   ) {
-  @apply ring-gray-6;
+  @apply ring-gray-border;
 }
 
 .avatar-xs {

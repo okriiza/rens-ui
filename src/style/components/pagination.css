@@ -3,7 +3,7 @@
 }
 
 .pagination .btn {
-  @apply hover:bg-gray-4 min-w-[2.5rem] border border-transparent px-0 py-2;
+  @apply hover:bg-gray-hover hover:text-content2 min-w-[2.5rem] border border-transparent px-0 py-2;
 }
 
 .pagination .btn.btn-active {

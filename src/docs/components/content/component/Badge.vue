@@ -12,5 +12,5 @@ defineProps({
 </script>
 
 <template>
-  <span class="badge ml-2" :class="styleClass">{{ text }}</span>
+  <span class="badge ml-2" :class="styleClass">{{ text }} </span>
 </template>

@@ -16,10 +16,6 @@ defineProps({
     type: Boolean,
     default: false
   },
-  boxed: {
-    type: Boolean,
-    default: false
-  },
   responsive: {
     type: Boolean,
     default: false
@@ -71,18 +67,6 @@ defineProps({
         <div class="tab tab-pill">Tab 1</div>
         <div class="tab tab-pill tab-active">Tab 2</div>
         <div class="tab tab-pill tab-disabled">Tab 3</div>
-      </div>
-    </template>
-    <template v-else-if="boxed">
-      <div class="w-full">
-        <div class="tabs tabs-boxed flex-nowrap gap-1">
-          <div class="tab">Tab 1</div>
-          <div class="tab tab-active">Tab 2</div>
-          <div class="tab">Tab 3</div>
-          <div class="tab">Tab 4</div>
-          <div class="tab">Tab 5</div>
-          <div class="tab">Tab 6</div>
-        </div>
       </div>
     </template>
     <template v-else-if="responsive">
@@ -167,24 +151,6 @@ defineProps({
 
         <input type="radio" id="tab-12" name="tab-4" class="tab-toggle" />
         <label for="tab-12" class="tab tab-pill">Tab 3</label>
-      </div>
-    </template>
-    <template v-else>
-      <div class="tabs tabs-boxed gap-1">
-        <input
-          type="radio"
-          id="tab-13"
-          name="tab-5"
-          class="tab-toggle"
-          checked
-        />
-        <label for="tab-13" class="tab">Tab 1</label>
-
-        <input type="radio" id="tab-14" name="tab-5" class="tab-toggle" />
-        <label for="tab-14" class="tab">Tab 2</label>
-
-        <input type="radio" id="tab-15" name="tab-5" class="tab-toggle" />
-        <label for="tab-15" class="tab">Tab 3</label>
       </div>
     </template>
   </div>

@@ -12,7 +12,7 @@
 }
 
 .btn-group > .btn:not(.btn-active) {
-  @apply active:bg-gray-5 hover:bg-gray-4;
+  @apply hover:active:text-white active:bg-gray-pressed hover:bg-gray-hover dark:hover:text-content3;
 }
 
 .btn-group > *:last-child {
@@ -82,7 +82,7 @@
 
 .btn-group > input[type='radio']:checked.btn,
 .btn-group > .btn-active {
-  @apply bg-gray-5;
+  @apply bg-gray-pressed text-white;
 }
 /* For rounded btn-group */
 

@@ -23,19 +23,34 @@ defineProps({
   <template v-if="avatarGroup">
     <div class="not-prose avatar-group">
       <div class="avatar">
-        <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+        <img
+          src="https://xsgames.co/randomusers/avatar.php?g=female"
+          alt="avatar"
+        />
       </div>
       <div class="avatar avatar-ring-warning">
-        <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+        <img
+          src="https://xsgames.co/randomusers/avatar.php?g=female"
+          alt="avatar"
+        />
       </div>
       <div class="avatar avatar-ring-success">
-        <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+        <img
+          src="https://xsgames.co/randomusers/avatar.php?g=female"
+          alt="avatar"
+        />
       </div>
       <div class="avatar avatar-ring-error">
-        <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+        <img
+          src="https://xsgames.co/randomusers/avatar.php?g=female"
+          alt="avatar"
+        />
       </div>
       <div class="avatar avatar-ring-primary">
-        <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+        <img
+          src="https://xsgames.co/randomusers/avatar.php?g=female"
+          alt="avatar"
+        />
       </div>
       <div class="avatar">
         <div>+99</div>
@@ -50,7 +65,10 @@ defineProps({
             class="btn-ghost btn flex cursor-pointer px-0 hover:bg-inherit"
             tabindex="0"
           >
-            <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+            <img
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="avatar"
+            />
           </label>
           <div class="dropdown-menu-bottom-right dropdown-menu">
             <a class="dropdown-item text-sm">Profile</a>
@@ -63,7 +81,10 @@ defineProps({
   </template>
   <template v-else>
     <div class="not-prose avatar" :class="styleClass">
-      <img src="https://ui-avatars.com/api/?name=Rens+UI" alt="avatar" />
+      <img
+        src="https://xsgames.co/randomusers/avatar.php?g=female"
+        alt="avatar"
+      />
     </div>
   </template>
 </template>
