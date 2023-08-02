@@ -58,11 +58,11 @@ definePageMeta({
             </li>
             <li>
               <a>
-                <span>{{ page._dir.title ?? page._dir }}</span>
+                <span>{{ page?._dir?.title ?? page?._dir }}</span>
               </a>
             </li>
             <!-- <pre>{{ page }}</pre> -->
-            <li>{{ page.title }}</li>
+            <li>{{ page?.title }}</li>
           </ul>
         </div>
       </div>
@@ -88,9 +88,9 @@ definePageMeta({
           </div>
           <div class="accordion-content text-content2">
             <div class="min-h-0">
-              <ul v-if="toc && toc.links">
+              <ul v-if="toc && toc?.links">
                 <li
-                  v-for="link in toc.links"
+                  v-for="link in toc?.links"
                   :key="link.text"
                   class="ml-0.5 space-y-1 border-l border-gray-border/50 text-sm"
                 >
@@ -150,7 +150,9 @@ definePageMeta({
                 </div>
               </template>
               <template #not-found>
-                <h1>Document not found</h1>
+                <div class="text-center not-proese">
+                  <NotFoundPage />
+                </div>
               </template>
             </ContentDoc>
           </div>

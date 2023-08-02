@@ -53,7 +53,7 @@ watchDebounced(
           ></div>
         </div>
         <li
-          v-for="{ id, text, children } in toc.links"
+          v-for="{ id, text, children } in toc?.links"
           :id="`toc-${id}`"
           :key="id"
           class="ml-0.5 space-y-1 border-l border-gray-border text-sm"

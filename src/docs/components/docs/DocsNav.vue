@@ -15,8 +15,8 @@ const onClick = () =>
       <div class="navbar-end">
         <div class="hidden lg:flex lg:items-center">
           <NuxtLink to="/getting-started" class="navbar-item">Docs</NuxtLink>
-          <NuxtLink to="/components/accordion" class="navbar-item"
-            >Components</NuxtLink
+          <NuxtLink to="/elements/accordion" class="navbar-item"
+            >Elements</NuxtLink
           >
           <div class="divider divider-vertical mx-0 h-6"></div>
         </div>
@@ -37,8 +37,8 @@ const onClick = () =>
             <NuxtLink to="/getting-started" class="dropdown-item text-sm"
               >Docs</NuxtLink
             >
-            <NuxtLink to="/components/accordion" class="dropdown-item text-sm"
-              >Components</NuxtLink
+            <NuxtLink to="/elements/accordion" class="dropdown-item text-sm"
+              >Elements</NuxtLink
             >
           </div>
         </div>
