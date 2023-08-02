@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/okriiza/rens-ui/issues"
   },
-  "homepage": "https://rensui.okriiza.my.id",
+  "homepage": "https://rens-ui.okriiza.my.id",
   "main": "dist/js/index.js",
   "types": "dist/js/types/config.types.d.ts",
   "typings": "dist/js/types/config.types.d.ts",

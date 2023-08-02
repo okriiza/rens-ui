@@ -1,11 +1,19 @@
+
+
 ## Rens UI: A Modern CSS Component Library
+<div align="center">
+
+![Rens UI](https://rens-ui.okriiza.my.id/image/social-card.png "Rens UI")
+
+
+</div>
 
 Welcome to **Rens UI**!
 
-- [Official website →](https:/rensui.okriiza.my.id/)
-- [How to install →](https://rensui.okriiza.my.id/getting-started/installation)
--  [How to used →](https://rensui.okriiza.my.id/getting-started/usage)
-- [See all components →](https://rensui.okriiza.my.id/elements/accordion/)
+- [Official website →](https:/rens-ui.okriiza.my.id/)
+- [How to install →](https://rens-ui.okriiza.my.id/getting-started/installation)
+-  [How to used →](https://rens-ui.okriiza.my.id/getting-started/usage)
+- [See all components →](https://rens-ui.okriiza.my.id/elements/accordion/)
 
  # Inspiration & Credits
  ___

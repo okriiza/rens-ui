@@ -63,7 +63,13 @@
 
             <ul class="mt-8 space-y-4 text-sm">
               <li>
-                <a class="transition hover:text-content3" href="/"> Github </a>
+                <NuxtLink
+                  class="transition hover:text-content3"
+                  to="https://github.com/okriiza/rens-ui"
+                  target="_blank"
+                >
+                  Github
+                </NuxtLink>
               </li>
 
               <li>
@@ -77,12 +83,22 @@
 
             <ul class="mt-8 space-y-4 text-sm">
               <li>
-                <a class="transition hover:text-content3" href="/">
+                <NuxtLink
+                  class="transition hover:text-content3"
+                  to="https://github.com/okriiza/rens-ui/issues"
+                  target="_blank"
+                >
                   Report Issue
-                </a>
+                </NuxtLink>
               </li>
               <li>
-                <a class="transition hover:text-content3" href="/"> License </a>
+                <NuxtLink
+                  class="transition hover:text-content3"
+                  to="https://github.com/okriiza/rens-ui/blob/main/LICENSE"
+                  target="_blank"
+                >
+                  License
+                </NuxtLink>
               </li>
               <li>
                 <a class="transition hover:text-content3" href="/">

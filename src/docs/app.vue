@@ -37,7 +37,7 @@ useHead({
     {
       hid: 'og:url',
       name: 'og:url',
-      content: 'https://okriiza.my.id'
+      content: 'https://rens-ui.okriiza.my.id'
     },
     { property: 'og:site_name', content: 'Rens UI' },
     { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -50,7 +50,7 @@ useHead({
     {
       hid: 'og:image',
       property: 'og:image',
-      content: 'https://okriiza.my.id/image/social-card.png'
+      content: 'https://rens-ui.okriiza.my.id/image/social-card.png'
     },
     {
       hid: 'og:image:alt',
@@ -78,7 +78,7 @@ useHead({
     {
       hid: 'twitter:image',
       name: 'twitter:image',
-      content: 'https://okriiza.my.id/image/social-card.png'
+      content: 'https://rens-ui.okriiza.my.id/image/social-card.png'
     }
   ]
 })
