@@ -1,5 +1,2 @@
-@import "tailwindcss/utilities";
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+@import 'tailwindcss/utilities';
+@import 'scrollbar.css';

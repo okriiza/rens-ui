@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   corePlugins: {
-    preflight: false,
+    preflight: false
   },
-  content: [],
+  content: [{ raw: '' }],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-};
+  plugins: []
+}

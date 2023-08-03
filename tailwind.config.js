@@ -6,7 +6,7 @@ module.exports = {
   content:
     process.env.NODE_ENV === 'production'
       ? [{ raw: '' }]
-      : ['./components/**/*.{html,js}', './docs/**/*.{html,js,vue}'],
+      : ['./src/docs/**/*.{vue,js,ts}'],
   darkMode: 'class',
   theme: {
     extend: {}

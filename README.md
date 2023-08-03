@@ -10,7 +10,7 @@
 
 Welcome to **Rens UI**!
 
-- [Official website →](https:/rens-ui.okriiza.my.id/)
+- [Official website →](https://rens-ui.okriiza.my.id/)
 - [How to install →](https://rens-ui.okriiza.my.id/getting-started/installation)
 -  [How to used →](https://rens-ui.okriiza.my.id/getting-started/usage)
 - [See all components →](https://rens-ui.okriiza.my.id/elements/accordion/)
