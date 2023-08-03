@@ -94,12 +94,12 @@ definePageMeta({
                   :key="link.text"
                   class="ml-0.5 space-y-1 border-l border-gray-border/50 text-sm"
                 >
-                  <a
+                  <NuxtLink
                     :href="`#${link.id}`"
                     class="-ml-px block border-l border-transparent py-1 pl-4 text-sm text-content2 hover:border-content3 hover:text-content3"
                   >
                     {{ link.text }}
-                  </a>
+                  </NuxtLink>
                 </li>
               </ul>
             </div>
