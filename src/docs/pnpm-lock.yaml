@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.6.7
     version: 0.6.7(nuxt@3.6.5)(vite@4.4.8)
   rens-ui:
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.4
+    version: 0.0.4
 
 devDependencies:
   '@nuxt/content':
@@ -6547,8 +6547,8 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /rens-ui@0.0.2:
-    resolution: {integrity: sha512-7INLl3DIpYGx84I4LBqhfLdf5ttYuyjoorHBLff2P8fCxUTjT9RuXtOIBSNldPseYX3P3m5TGXiMIgDDreXRYw==}
+  /rens-ui@0.0.4:
+    resolution: {integrity: sha512-z/5tnJpE1HOien+/O7wTBOvWyN4LEsw+GsxLlB4KgI3LkhU123tJYwZ1+hYQWMepGYSHF1ByboNmnYeTY2FYvw==}
     dependencies:
       '@types/postcss-js': 4.0.1
       postcss: 8.4.27
