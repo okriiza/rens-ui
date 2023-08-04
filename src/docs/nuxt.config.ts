@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/devtools'
   ],
+  extends: ['nuxt-umami'],
   colorMode: {
     classSuffix: '',
     dataValue: 'theme'
