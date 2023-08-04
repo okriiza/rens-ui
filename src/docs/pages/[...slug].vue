@@ -4,8 +4,9 @@ const { path, fullPath } = useRoute()
 const activeTocId: Ref<null | string> = ref(null)
 const nuxtContent = ref(null)
 
-// console.log(path, fullPath)
-umTrackView(fullPath)
+if (fullPath) {
+  umTrackView(fullPath, document.referrer)
+}
 
 const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
 const observerOptions = reactive({
