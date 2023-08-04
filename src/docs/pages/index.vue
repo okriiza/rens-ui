@@ -1,10 +1,8 @@
 <script setup>
 const { fullPath } = useRoute()
-
-if (fullPath) {
+onMounted(() => {
   umTrackView(fullPath, document.referrer)
-}
-
+})
 useHead({
   title: 'Rens UI Tailwind CSS Component Library With Modern UI'
 })

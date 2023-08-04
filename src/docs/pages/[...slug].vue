@@ -4,10 +4,6 @@ const { path, fullPath } = useRoute()
 const activeTocId: Ref<null | string> = ref(null)
 const nuxtContent = ref(null)
 
-if (fullPath) {
-  umTrackView(fullPath, document.referrer)
-}
-
 const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
 const observerOptions = reactive({
   root: nuxtContent.value,
@@ -27,6 +23,8 @@ onMounted(() => {
   document.querySelectorAll('.nuxt-content h2[id]').forEach((section) => {
     observer.value?.observe(section)
   })
+
+  umTrackView(fullPath, document.referrer)
 })
 
 onUnmounted(() => {
