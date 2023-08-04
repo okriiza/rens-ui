@@ -1,4 +1,8 @@
 <script setup>
+const { fullPath } = useRoute()
+
+umTrackView(fullPath)
+
 useHead({
   title: 'Rens UI Tailwind CSS Component Library With Modern UI'
 })

@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const { toc, prev, next, navigation, page } = useContent()
-const { path } = useRoute()
+const { path, fullPath } = useRoute()
 const activeTocId: Ref<null | string> = ref(null)
 const nuxtContent = ref(null)
+
+// console.log(path, fullPath)
+umTrackView(fullPath)
 
 const observer: Ref<IntersectionObserver | null | undefined> = ref(null)
 const observerOptions = reactive({
