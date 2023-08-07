@@ -1,5 +1,5 @@
 .alert {
-  @apply relative flex w-full flex-row items-center rounded-lg bg-gray-background dark:bg-gray-background px-4 py-3;
+  @apply relative flex w-full flex-row items-center rounded-lg bg-gray-background px-4 py-3 text-content2;
 }
 
 .alert-content {
@@ -38,5 +38,38 @@
   @apply border border-red-border text-red-base bg-red-background dark:bg-gray-background;
 }
 .alert-border {
-  @apply border border-gray-border;
+  @apply border border-gray-border text-content2;
+}
+
+/* Dark */
+:where([data-theme='dark']) .alert-info {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-info-border {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-success {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-success-border {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-warning {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-warning-border {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-error {
+  @apply bg-gray-background;
+}
+
+:where([data-theme='dark']) .alert-error-border {
+  @apply bg-gray-background;
 }

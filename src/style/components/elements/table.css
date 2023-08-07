@@ -62,5 +62,5 @@
 /* Hover */
 .table.table-hover > tbody > tr:hover > td,
 .table.table-hover > tbody > tr:hover > th {
-  @apply bg-gray-hover dark:text-content3;
+  @apply bg-gray-hover text-content2;
 }

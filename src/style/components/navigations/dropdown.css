@@ -14,7 +14,7 @@
 
 .dropdown-item {
   transition: transform 0.12s ease;
-  @apply flex w-full cursor-pointer flex-col rounded-[5px] p-2 font-medium  hover:bg-gray-hover dark:hover:text-content3 active:scale-[0.97] active:bg-gray-pressed active:text-white;
+  @apply flex w-full cursor-pointer flex-col rounded-[5px] p-2 font-medium  hover:bg-gray-hover hover:text-content2 active:scale-[0.97] active:bg-gray-pressed active:text-white;
 }
 
 .dropdown-item.dropdown-active {

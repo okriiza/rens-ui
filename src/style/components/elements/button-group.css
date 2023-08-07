@@ -12,7 +12,7 @@
 }
 
 .btn-group > .btn:not(.btn-active) {
-  @apply hover:active:text-white active:bg-gray-pressed hover:bg-gray-hover dark:hover:text-content3;
+  @apply hover:active:text-white active:bg-gray-pressed hover:bg-gray-hover hover:text-content2;
 }
 
 .btn-group > *:last-child {

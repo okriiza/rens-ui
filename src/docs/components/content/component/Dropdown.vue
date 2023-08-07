@@ -71,7 +71,7 @@ defineProps({
             fill="currentColor"
           />
         </svg>
-        <span class="alert-content ml-3 text-white"
+        <span class="alert-content ml-3 text-content2"
           >Add `tabIndex=-1` on item for close the dropdown when click Me on
           item.</span
         >
